@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_enraged_wildkin_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_vulture_a/n_creep_vulture_a.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"1.1000000238419"
+		"Level"		"5"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"enraged_wildkin_tornado"
+		"Ability2"		"enraged_wildkin_toughness_aura"
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"4"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"50"
+		"AttackDamageMax"		"56"
+		"AttackRate"		"1.3500000238419"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"128"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"119"
+		"BountyGoldMin"		"67"
+		"BountyGoldMax"		"87"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"220"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"320"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"950"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"400"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

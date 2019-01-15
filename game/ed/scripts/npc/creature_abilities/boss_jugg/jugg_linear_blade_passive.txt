@@ -1,0 +1,36 @@
+"DOTAAbilities"
+{
+	"jugg_linear_blade_passive"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_jugg_linear_blade_passive"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"IsDebuff"			"0"
+		
+				"EffectName"		"particles/creatures/boss_jugg/jugg_linear_blade_trail.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"States"
+				{
+					"MODIFIER_STATE_NO_HEALTH_BAR"		"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+				"OnOwnerDied"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/creatures/boss_jugg/jugg_linear_blade.lua"
+						"Function"		"OnLinearBladeDie"
+						"Target"		"CASTER"
+					}
+				}
+			}
+		}
+	}
+}

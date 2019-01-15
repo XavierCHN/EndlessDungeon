@@ -1,0 +1,69 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_black_dragon_ed"
+	{
+		//"ProjectileModel"		"particles/neutral_fx/black_dragon_attack_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"1"
+		"Level"		"6"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"black_dragon_fireball"
+		"Ability2"		"black_dragon_splash_attack"
+		"Ability3"		"black_dragon_dragonhide_aura"
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"3"
+		"MagicalResistance"		"70"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"48"
+		"AttackDamageMax"		"81"
+		"AttackRate"		"1.5"
+		"AttackAnimationPoint"		"0.93999999761581"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"300"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"155"
+		"BountyGoldMin"		"150"
+		"BountyGoldMax"		"190"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"300"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"300"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"2000"
+		"StatusHealthRegen"		"2"
+		"StatusMana"		"500"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

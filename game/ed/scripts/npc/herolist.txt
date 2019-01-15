@@ -1,0 +1,6 @@
+"CustomHeroList"
+{
+	// "npc_dota_hero_crystal_maiden"			"1" // 水晶室女的设计不是很符合暗黑类的设定
+	"npc_dota_hero_sniper"					"1"
+	
+}

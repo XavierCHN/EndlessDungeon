@@ -1,0 +1,74 @@
+"DOTAUnits"
+{
+	"npc_dota_creature_jugg_flying_blade"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/creatures/boss_jugg/jugg_flying_blade.vmdl"	// Model.
+		"ModelScale"				"1"
+		"Level"						"1"
+		
+		"UseNeutralCreepBehavior" 	"0"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		"AbilityLayout"				"dummy_unit_passive"
+		"Ability1"					""			// Ability 1. 
+		"Ability2"					""			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+		"MagicalResistance"			"0"		// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"5"								// Damage range min.
+		"AttackDamageMax"			"5"								// Damage range max.
+		"AttackRate"				"1.4"								// Speed of attack.
+		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"2000"								// Range within a target can be acquired.
+		"AttackRange"				"2000"								// Range within a target can be attacked.
+		"ProjectileModel"			"particles/units/heroes/hero_clinkz/clinkz_base_attack.vpcf"				// Particle system model for projectile.
+		"ProjectileSpeed"			"900"								// Speed of projectile.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"1"		// Gold earned min.
+		"BountyGoldMax"				"1"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"70"
+		"HealthBarOffset"			"200"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"			// Type of locomotion - ground, air
+		"MovementSpeed"				"900"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+		
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1000"			// Base health.
+		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
+		"StatusMana"				"300"			// Base mana.
+		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
+
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+	}
+}

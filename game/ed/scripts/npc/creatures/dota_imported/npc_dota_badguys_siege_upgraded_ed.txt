@@ -1,0 +1,75 @@
+"DOTAUnits"
+{
+	"npc_dota_badguys_siege_upgraded_ed"
+	{
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/lane_creeps/creep_bad_siege/creep_bad_siege.vmdl"
+		"SoundSet"		"Creep_Bad_Engine"
+		"ModelScale"		"0.80000001192093"
+		"Level"		"4"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"0"
+		"MagicalResistance"		"80"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"51"
+		"AttackDamageMax"		"62"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"2.7000000476837"
+		"AttackAnimationPoint"		"0.69999998807907"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"690"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"88"
+		"BountyGoldMin"		"66"
+		"BountyGoldMax"		"80"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_SIEGE"
+		"HealthBarOffset"		"160"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"325"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"550"
+		"StatusHealthRegen"		"0"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"850"
+		"VisionNighttimeRange"		"850"
+	}
+}

@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Ability: Earthshaker Fissure
+	//=================================================================================================================
+	"earthshaker_fissure"
+	{
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0"
+		"AbilityDuration"				"0.5"
+		"AbilityDamage"					"100 100 100 100"
+		"AbilityManaCost"				"0 0 0 0"		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"fissure_range"				"2000"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fissure_duration"			"2.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"fissure_radius"				"200"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"0.5"
+			}
+		}
+	}
+}

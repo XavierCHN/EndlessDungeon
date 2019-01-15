@@ -1,0 +1,81 @@
+"DOTAAbilities"
+{
+	"item_tatical_pause"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"memes/item_tatical_pause"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemKillable"					"0"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+        "ItemInitialCharges"            "1"
+
+        "OnSpellStart"
+        {
+        	"SpendCharge" {}
+            "ActOnTargets"
+            {
+            	"Target"
+            	{
+            		"Center"  	"CASTER"
+            		"Radius" 	"99999"
+            		"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+            		"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            	}
+            
+            	"Action"    
+            	{
+            		"ApplyModifier"
+            		{
+            			"ModifierName"	"modifier_tatical_pause_frozen"
+            			"Target" 		"TARGET"
+            			"Duration"		"%duration"
+            		}
+            	}
+            }
+        }
+
+        "Modifiers"
+        {
+        	"modifier_tatical_pause_frozen"
+        	{
+        		"Passive"			"0"
+        		"IsHidden"			"0"
+        		"IsDebuff"			"1"
+				
+				"States"
+		        {
+		        	"MODIFIER_STATE_FROZEN"		"MODIFIER_STATE_VALUE_ENABLED"
+                    "MODIFIER_STATE_STUNNED"    "MODIFIER_STATE_VALUE_ENABLED"
+		        }
+
+                "EffectName"            "particles/econ/items/faceless_void/faceless_void_jewel_of_aeons/fv_time_walk_debuff_jewel.vpcf"
+                "EffectAttachType"      "follow_origin"
+        	}
+        }
+
+        "AbilitySpecial"
+        {
+        	"01"
+        	{
+        		"var_type"			"FIELD_FLOAT"
+        		"duration"			"2.3"
+        	}
+        }
+        
+	}
+}

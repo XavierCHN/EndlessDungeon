@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_forest_troll_high_priest_ed"
+	{
+		//"ProjectileModel"		"particles/base_attacks/ranged_badguy_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"2"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"forest_troll_high_priest_heal"
+		"Ability2"		"forest_troll_high_priest_mana_aura"
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"0"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"25"
+		"AttackDamageMax"		"32"
+		"AttackRate"		"1.7999999523163"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"600"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"41"
+		"BountyGoldMin"		"21"
+		"BountyGoldMax"		"25"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"170"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"290"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"450"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"500"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1400"
+		"VisionNighttimeRange"		"800"
+	}
+}

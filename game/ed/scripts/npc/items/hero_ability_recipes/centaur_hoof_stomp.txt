@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+	"item_centaur_hoof_stomp"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"drops/centaur_hoof_stomp"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIAGE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT"
+		"AbilityCooldown"	"1"
+		"Model"	"models/props_gameplay/recipe.vmdl"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemPermanent"	"0"
+		"ItemCost"				"1000"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"OnAbilityPhaseStart"
+		{
+			"SpendCharge"  {}
+			"RunScript"
+			{
+				"ScriptFile"	"items/item_ability_scroll.lua"
+				"Function"	"OnPlayerUseAbilityScroll"
+				"Target"	"CASTER"
+			}
+		}
+	}
+}

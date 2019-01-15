@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_satyr_trickster_ed"
+	{
+		//"ProjectileModel"		"particles/neutral_fx/satyr_trickster_projectile_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_satyr_b/n_creep_satyr_b.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.69999998807907"
+		"Level"		"2"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"satyr_trickster_purge"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"0"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"7"
+		"AttackDamageMax"		"10"
+		"AttackRate"		"1.7000000476837"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"300"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"41"
+		"BountyGoldMin"		"15"
+		"BountyGoldMax"		"17"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"170"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"330"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"300"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"500"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

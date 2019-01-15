@@ -1,0 +1,14 @@
+"DOTAAbilities"
+{
+	"techies_plant_bomb"
+	{
+		"BaseClass"			"ability_lua"
+
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		"ScriptFile"		"abilities/creatures/boss_techies/techies_plant_bomb.lua"
+
+		"precache1"			"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
+		"precache2"			"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
+	}
+}

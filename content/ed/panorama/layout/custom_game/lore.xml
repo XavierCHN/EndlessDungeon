@@ -1,0 +1,20 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/lore.js" />
+	</scripts>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/lore.css" />
+		<include src="file://{resources}/styles/dotastyles.css" />
+	</styles>
+	<Panel class="Lore_Root">
+		<Image class="LorePageImage" id="lore_image" src="file://{resources}/images/lore/page1.png" />
+		<Image class="LoreForeGround" src="file://{resources}/images/lore/lore_foreground.png" />
+		<Label class="LoreText" id="lore_text" text="#lore_text_page1" />
+		<Button id="NextPageButton" onactivate="OnClickNextPage()">
+			<Label text="#next_page" class="ButtonLabel" />
+		</Button>
+		<Button id="CloseButton" onactivate="OnClickClose()">
+			<Label text="#close" class="ButtonLabel" />
+		</Button>
+	</Panel>
+</root>

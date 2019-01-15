@@ -1,0 +1,50 @@
+"DOTAAbilities"
+ {
+     "creature_huskar_burning_spear"
+     {
+        "BaseClass"             		"ability_datadriven"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+
+        "OnSpellStart"
+        {
+        	"LinearProjectile"
+        	{
+        	    "Target"      	 "POINT"
+        		"EffectName"	 "particles/creatures/boss_huskar/huskar_attack.vpcf"
+        		"MoveSpeed"		 "1000"
+        		"StartRadius"	 "64"
+        		"StartPosition"  "attach_attack1"
+        		"EndRadius"      "64"
+        		"HasFrontalCone" "0"
+        		"FixedDistance"  "2000"
+        		"TargetTeams"	 "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        		"TargetTypes"	 "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+        		"TargetFlags"	 "DOTA_UNIT_TARGET_FLAG_NONE"						
+        	    "ProvidesVision" "0"
+        	}
+
+        	"FireSound"
+        	{
+        		"EffectName"	"Hero_Huskar.PreAttack"
+        		"Target" 		"CASTER"
+        	}
+        }
+
+        "OnProjectileHitUnit"
+        {
+        	"DeleteOnHit"	"1"
+        	"RunScript"
+        	{
+        		"ScriptFile"	"utils/damage.lua"
+        		"Function"		"KVDealDamagePercentage"
+        		"DamagePercentage"	"10"
+        		"Target"		"TARGET"
+        	}
+        	"FireSound"
+        	{
+        		"EffectName"	"Hero_Huskar.ProjectileImpact"
+        		"Target" 		"TARGET"
+        	}
+        }
+     }
+ }

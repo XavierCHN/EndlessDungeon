@@ -1,0 +1,74 @@
+// -- models/props/traps/barking_dog/barking_dog.vmdl -- 蓝火陷阱
+// -- models/props/traps/hooded_fang/hooded_fang.vmdl -- 剧毒陷阱
+// -- models/props/traps/spiketrap/spiketrap.vmdl 地刺
+// -- models/props_debris/barrel002.vmdl -- 木桶1
+// -- models/props_debris/barrel002a.vmdl -- 木桶2
+// -- models/props_debris/barrel003a.vmdl -- 空木桶
+// -- models/props_debris/clay_pots_broken001a.vmdl 瓦罐
+// -- models/props_debris/merchant_debris_chest001.vmdl 宝箱1
+// -- models/props_debris/merchant_debris_chest002.vmdl 宝箱2
+// -- models/props_gameplay/treasure_chest001.vmdl 金色宝箱
+
+// -- 310.847 200.361 110 半径64？
+// -- 地面类型
+
+// -- 地刺
+// -- 定时地刺
+// -- 石块
+// -- 金属块
+// -- 移动的刺
+// -- 罐子
+// -- 蘑菇
+// -- 骷髅
+// -- 蓝火
+// -- 剧毒
+
+// -- 每个房间在初始化的时候顺路初始化他的陷阱（？已经摧毁的陷阱也需要保存）
+// -- 这样的话，就需要在初始化房间的时候初始化所有陷阱
+// -- 并在重新进入房间的时候重新放置所有的陷阱
+
+// -- 每个房间到底有多少陷阱 应该预先设置好
+
+"DOTAUnits"
+{
+	"prop_chest_golden"
+	{
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/props/chest_golden.vmdl"	// Model.
+		"ModelScale"				"2"
+		
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"18"		// Damage range min.
+		"AttackDamageMax"			"22"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"128"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			""			// Speed of projectile.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"120"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"3000"		// Base health.
+		"StatusHealthRegen"			"100.0"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+	}
+}

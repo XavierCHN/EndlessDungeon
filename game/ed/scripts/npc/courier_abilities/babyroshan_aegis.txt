@@ -1,0 +1,11 @@
+"DOTAAbiltiies"
+{
+    "babyroshan_aegis"
+    {
+        "BaseClass"     "ability_lua"
+        "ScriptFile"    "abilities/couriers/babyrosahn_aegis.lua"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName" "couriers/babyroshan_aegis"
+        "MaxLevel"      "1"
+    }
+}

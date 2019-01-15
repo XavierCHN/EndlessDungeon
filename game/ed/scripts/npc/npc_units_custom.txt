@@ -1,0 +1,81 @@
+//========================================================================================================
+//=====**        这里引入了所有从DOTA2中导入的所有生物，包括了所有的野怪，小兵等等           **====
+//========================================================================================================
+#base dota_imported_units.txt
+
+//========================================================================================================
+// REGION PROPS
+//========================================================================================================
+#base props/prop_barking_dog.txt //  喷火怪
+#base props/prop_hooded_fang.txt //  喷毒怪
+#base props/prop_spike_trap.txt //  间歇地刺
+#base props/prop_spikes.txt //  常时地刺
+#base props/prop_random_rock.txt //  随机石块
+#base props/prop_static_rock.txt //  固定石块
+#base props/prop_barrel.txt // 木桶 TODO:给木桶物品掉落
+#base props/prop_barrel_empty.txt // 空木桶
+#base props/prop_clay_pots.txt // 破瓦罐
+#base props/prop_chest.txt // 宝箱
+#base props/prop_chest_box.txt // 宝箱盒子
+#base props/prop_chest_golden.txt // 金色宝箱
+
+//========================================================================================================
+// 物品单位
+//========================================================================================================
+#base units/npc_dota_bomb.txt // 炸弹
+#base units/npc_dota_burning_forged_spirit.txt // Burning的小火人
+
+//========================================================================================================
+// 敌方生物
+//========================================================================================================
+#base creatures/golem_splitters.txt
+#base creatures/zombies.txt
+#base creatures/npc_dota_creature_corpselord.txt
+#base creatures/npc_dota_creature_lesser_nightcrawler.txt
+#base creatures/npc_dota_creature_ogre_magi.txt
+#base creatures/npc_dota_creature_ogre_melee.txt
+#base creatures/npc_dota_creature_ogre_tank.txt
+#base creatures/npc_dota_creature_satyr.txt
+#base creatures/boss_broodking/npc_dota_creature_broodking.txt
+#base creatures/boss_broodking/npc_dota_creature_broodmother.txt
+#base creatures/boss_broodking/npc_dota_creature_broodmother_egg.txt
+#base creatures/boss_broodking/npc_dota_creature_spiderling.txt
+#base creatures/npc_dota_creature_clinkz.txt
+
+//========================================================================================================
+// Bosses
+//========================================================================================================
+#base creatures/boss_pudge/npc_dota_creature_boss_pudge.txt
+#base creatures/boss_pudge/npc_dota_creature_boss_pudge_minipudge.txt
+
+#base creatures/boss_nevermore/npc_dota_creature_boss_nevermore.txt
+#base creatures/boss_nevermore/npc_dota_nevermore_requiem_treant.txt
+
+#base creatures/boss_huskar/npc_dota_creature_huskar.txt
+
+#base creatures/boss_bristleback/npc_dota_creature_boss_bristleback.txt
+#base creatures/boss_bristleback/npc_dota_creature_boss_bristleback_guard.txt
+
+#base creatures/boss_techies/npc_dota_creature_boss_techies.txt
+#base creatures/boss_techies/npc_dota_creature_boss_techies_bomb.txt
+
+#base creatures/boss_yyf/npc_dota_creature_storm_spirit.txt
+#base creatures/boss_yyf/npc_dota_creature_storm_spirit1.txt
+#base creatures/boss_yyf/npc_dota_creature_storm_spirit2.txt
+#base creatures/boss_yyf/npc_dota_creature_storm_spirit3.txt
+#base creatures/boss_yyf/npc_dota_creature_storm_spirit_remant.txt
+#base creatures/boss_yyf/npc_dota_creature_brewmaster_wind.txt
+#base creatures/boss_yyf/npc_dota_creature_brewmaster_fire.txt
+#base creatures/boss_yyf/npc_dota_creature_brewmaster_earth.txt
+#base creatures/boss_yyf/npc_dota_creature_slardar.txt
+#base creatures/boss_yyf/npc_dota_creature_slardar_little_zombie.txt
+
+"DOTAUnits"
+{
+	"dummy_unit"
+	{
+		"BaseClass"			"npc_dota_creature"
+		"Model"				"models/development/invisiblebox.vmdl"
+		"Ability1"			"dummy_unit_passive"
+	}
+}

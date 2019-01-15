@@ -1,0 +1,59 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/minimap.js" />
+		<include src="file://{resources}/scripts/custom_game/hud_main.js" />
+        <include src="file://{resources}/scripts/custom_game/ability_ui_hack.js" />
+	</scripts>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/resource_compiler.css" />
+		<!--<include src="file://{resources}/styles/dota_hud_quick_buy.css" />-->
+		<include src="file://{resources}/styles/custom_game/minimap.css" />
+		<include src="file://{resources}/styles/custom_game/hud_main.css" />
+	</styles>
+	<Panel hittest="false" class="HudMain_Root">
+
+		<Panel hittest="false" class="MinimapRoot" id="minimap">
+			<!-- 所有的小地图的元素使用动态载入 -->
+		</Panel>
+
+		<!--&lt;!&ndash; 显示游戏信息 &ndash;&gt;-->
+		<!--<Panel hittest="false" class="InfoPanel" id="info_panel">-->
+			<!--&lt;!&ndash;<Label id="lives_left_panel" text="#lives_left_text" />&ndash;&gt;-->
+		<!--</Panel>-->
+
+		<!-- 显示当前BOSS血量/进度 -->
+		<Panel id="boss_hp_panel" class="BossHealthPoint" hittest="false">
+			<Panel class="BossHealthPointProgressContainer">
+				<ProgressBar hittest="false" id="BossHPProgress" value="0.33" />
+				<Panel class="HPBurnerContainer" id="hp_burner_container">
+					<DOTAScenePanel id="hp_burner" map="scenes/hud/healthbarburner" camera="camera_1"/>
+				</Panel>
+			</Panel>
+			<Panel class="BossHPPanelOverlay" />
+			<Panel id="boss_name_panel" class="BossNamePanel">
+				<Label id="boss_name" class="BossUnitName" text="#unknown" />
+			</Panel>
+		</Panel>
+
+		<Panel class="GameInfos">
+			<Panel class="GameClockBackground" id="game_clock_background" hittest="false" hittestchildren="false">
+				<Label id="game_clock" class="GameClock" text="00:00.000" />
+			</Panel>
+
+			<!--<Panel class="PlayerCoinPanel"-->
+		</Panel>
+
+
+		<!--显示进入新一层的Overlay-->
+		<Panel class="NewLevelOverlay NotShowing" id="new_level_overlay">
+			<Image class="NewLevelOverlayBackground" id="random_background" src="file://{resources}/images/ui/new_level/random_background_1.png" />
+			<Image class="NewLevelOverlayLogo" src="file://{resources}/images/ui/new_level/new_level_logo.png" />
+		</Panel>
+
+		<Panel class="NewLevelMsg NotShowing" id="new_level_msg" hittest="false" hittestchildren="false" >
+			<Label class="NewLevelMsgText" text="#new_level_text_center_tooltip" id="new_level_label" />
+		</Panel>
+
+	</Panel>
+</root>

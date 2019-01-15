@@ -1,0 +1,45 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Ability: Earthshaker Totem
+	//=================================================================================================================
+	"earthshaker_enchant_totem"
+	{
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.69"
+		"FightRecapLevel"				"1"
+		"AbilityCooldown"				"0.0"
+		"AbilityDuration"				"0.0"
+		"AbilityDamage"					"0 0 0 0"
+		"AbilityManaCost"				"0"		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"totem_damage_percentage"	"100"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tooltip_duration"			"0.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance_scepter"			"2000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"aftershock_range"			"10"
+			}
+		}
+	}
+
+}

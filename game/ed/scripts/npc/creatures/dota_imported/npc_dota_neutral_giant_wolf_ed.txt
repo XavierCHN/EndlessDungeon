@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_giant_wolf_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_worg_small/n_creep_worg_small.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"3"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"giant_wolf_critical_strike"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"21"
+		"AttackDamageMax"		"24"
+		"AttackRate"		"1.4500000476837"
+		"AttackAnimationPoint"		"0.33000001311302"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"90"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"62"
+		"BountyGoldMin"		"22"
+		"BountyGoldMax"		"26"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"130"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"350"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"500"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

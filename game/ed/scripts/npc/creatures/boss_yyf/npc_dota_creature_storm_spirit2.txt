@@ -1,0 +1,115 @@
+"DOTAUnits"
+{
+    "npc_dota_creature_storm_spirit2"
+    {
+        // General
+        //
+        "BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+        "Model"						"models/heroes/storm_spirit/storm_spirit.vmdl"	// Model.
+        "ModelScale"				"1.8"
+        "Level"						"1"
+        "ConsideredHero"			"1"
+
+        "SoundSet"					"Hero_StormSpirit"								// Name of sound set.
+        "GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
+
+        // Inventory
+        //----------------------------------------------------------------
+        "HasInventory"				"1"
+
+        // Abilities
+        //----------------------------------------------------------------
+
+        "Ability1"					""			// Ability 1.
+        "Ability2"					""			// Ability 2.
+        "Ability3"					""			// Ability 3.
+        "Ability4"					""			// Ability 4.
+        "Ability5"					""			// Ability 5.
+        "Ability6"					""		    // Ability 6 - Extra.
+        "Ability7"					""			// Ability 7 - Extra.
+        "Ability8"					""			// Ability 8 - Extra.
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"				"0"			// Physical protection.
+        "MagicalResistance"			"0"		// Magical protection.
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"			"100"		// Damage range min.
+        "AttackDamageMax"			"100"		// Damage range max.
+        "AttackRate"				"1.7"		// Speed of attack.
+        "AttackAnimationPoint"		"0.5"		// Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"	"2000"		// Range within a target can be acquired.
+        "AttackRange"				"128"		// Range within a target can be attacked.
+        "ProjectileModel"			""			// Particle system model for projectile.
+        "ProjectileSpeed"			"0"			// Speed of projectile.
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyXP"					"0"		// Experience earn.
+        "BountyGoldMin"				"1"		// Gold earned min.
+        "BountyGoldMax"				"1"		// Gold earned max.
+
+        // Bounds
+        //----------------------------------------------------------------
+        "RingRadius"				"70"
+        "HealthBarOffset"			"300"
+        "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+        "MovementSpeed"				"300"		// Speed
+        "MovementTurnRate"			"0.7"		// Turning rate.
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"				"5000"		// Base health.
+        "StatusHealthRegen"			"0.0"		// Health regeneration rate.
+        "StatusMana"				"1500"		// Base mana.
+        "StatusManaRegen"			"10.0"		// Mana regeneration rate.
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"		"2000"		// Range of vision during day light.
+        "VisionNighttimeRange"		"2000"		// Range of vision at night time.
+
+        // Creature Data
+        //----------------------------------------------------------------------------------------------------------------------
+        "Creature"
+        {
+            "CanRespawn"				"0"
+
+            "EquippedItems"
+            {
+                "ForceStaff"
+                {
+                    "Item"					"item_ultimate_scepter"
+                }
+            }
+
+            "DisableResistance"			"100.0"
+
+
+            "DefaultState"				"Invade"
+
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"			"6431" // 头
+                }
+                "Wearable2"
+                {
+                    "ItemDef"			"309" // 肩膀
+                }
+                "Wearable3"
+                {
+                    "ItemDef"			"6168" // 衣服
+                }
+            }
+        }
+    }
+}

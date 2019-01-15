@@ -1,0 +1,13 @@
+"DOTAAbilities"
+{
+	"creature_pudge_charge"
+	{
+		"BaseClass"             		"ability_lua"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		"ScriptFile"					"abilities/creatures/boss_pudge/creature_pudge_charge.lua"
+
+		"AbilityCastPoint"				"1"
+	}
+}

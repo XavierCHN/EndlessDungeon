@@ -1,0 +1,11 @@
+"DOTAAbilities"
+{
+	"creature_pudge_jump"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"abilities/creatures/boss_pudge/creature_pudge_jump.lua"
+		"AbilityTextureName"			""
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	}
+}

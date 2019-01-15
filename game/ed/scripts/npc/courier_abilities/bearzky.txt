@@ -1,0 +1,16 @@
+// 冰系的英雄
+"DOTAAbilities"
+{
+	// 发射一枚冰刺，碰到敌人后爆裂，对周围300范围内的敌人造成自身攻击力120%的伤害
+	"bearzky_ice_shards"
+	{
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/couriers/bearzky/bearzky_ice_shards.lua"
+		"AbilityTextureName"	"couriers/bearzky/bearzky_ice_shards"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"				"1"
+
+		"p"		"particles/couriers/bearzky/bearzky_ice_shards.vpcf"
+		"p1"	"particles/couriers/bearzky/bearzky_ice_shards_explode.vpcf"
+	}
+}

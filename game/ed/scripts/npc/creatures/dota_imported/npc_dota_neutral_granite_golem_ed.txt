@@ -1,0 +1,69 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_granite_golem_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_golem_a/neutral_creep_golem_a.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"1.1499999761581"
+		"Level"		"6"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"granite_golem_hp_aura"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"8"
+		"MagicalResistance"		"70"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"77"
+		"AttackDamageMax"		"87"
+		"AttackRate"		"1.3500000238419"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"128"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"155"
+		"BountyGoldMin"		"107"
+		"BountyGoldMax"		"121"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"220"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"270"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"1700"
+		"StatusHealthRegen"		"1.5"
+		"StatusMana"		"600"
+		"StatusManaRegen"		"1.5"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

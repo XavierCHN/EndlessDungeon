@@ -1,0 +1,41 @@
+"EndlessDungeonBullets"
+{
+	"FailSafeBullet"
+	{
+		"BulletParticle"	"particles/generic/fail_safe_attack.vpcf"
+		"BulletImpactParticle" "particles/econ/items/pudge/pudge_ti6_immortal/pudge_meathook_impact_ti6_droplets.vpcf"
+		"BulletStartSound"	"Tower.Fire.Attack"
+		"BulletEndSound"	"hero_Crystal.projectileImpact"
+	}
+	"crystal_maiden_base_attack"
+	{
+		"BulletParticle"	"particles/characters/crystal_maiden/maiden_base_attack.vpcf"
+		"BulletImpactParticle"	"particles/econ/items/earthshaker/earthshaker_totem_ti6/earthshaker_totem_ti6_blur_impact.vpcf"
+		"BulletStartSound"	"hero_Crystal.attack"
+		"BulletEndSound"	"Hero_WarlockGolem.Attack"
+		"SoundFile"			"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+	}
+	"sniper_base_attack"
+	{
+		"BulletParticle"		"particles/base_attacks/fountain_attack_linear.vpcf"
+		"BulletStartSound"		"hero_viper.attack"
+		"BulletEndSound"		"Hero_WarlockGolem.Attack"
+		"SoundFile"				"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+		"SoundFile1"			"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+	}
+	"blue_bullet"
+	{
+		"BulletParticle"		"particles/bullets/blue_bullet.vpcf"
+		"BulletImpactParticle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_vendetta_impact.vpcf"
+		"BulletStartSound"		"Tower.Water.Attack"
+		"BulletEndSound"		"Creep_Good_Range.ProjectileImpact"
+	}
+	"drodo_fish_attack"
+	{
+		"BulletParticle"		"particles/couriers/drodo/drodo_fish_attack.vpcf"
+		"BulletImpactParticle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_vendetta_impact.vpcf"
+		"BulletStartSound"		"General.Fish_flap"
+		"soundfile"				"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+		"BulletEndSound"		"Hero_Lion.ProjectileImpact"
+	}
+}

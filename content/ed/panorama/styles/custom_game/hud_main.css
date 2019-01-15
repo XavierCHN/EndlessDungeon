@@ -1,0 +1,193 @@
+.HudMain_Root{
+	width:100%;
+	height:100%;
+}
+
+.GameInfos {
+	/*background-color:gradient()*/
+	width: 400px;
+	margin-top: 60px;
+	padding: 20px;
+	background-color:gradient( linear, 0% 0%, 100% 0%, from( #24333390 ), color-stop( 0.25, #24333390 ), to( #24333300 ) );
+
+	flow-children:down;
+}
+
+.SupportedFonts {
+	font-family: "Radiance,FZLanTingHei-R-GBK,Gulim,MingLiU,Goudy Trajan Medium,FZKai-Z03";
+}
+
+.InfoPanel{
+	vertical-align: bottom;
+	horizontal-align:right;
+	flow-children:down;
+	margin-right: 20px;
+	margin-bottom:20px;
+}
+
+.InfoPanel Label {
+	font-size: 30px;
+	color: white;
+	horizontal-align:right;
+	text-align: right;
+}
+
+
+.BossHPPanelOverlay {
+	width: 100%;
+	height: 70px;
+	margin-top: 20px;
+	background-image:url("file://{resources}/images/ui/boss/healthbar_v2.png");
+	background-size: 100% 100%;
+}
+
+.BossHealthPoint
+{
+	width: 692px;
+	height: 90px;
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 40px;
+	visibility: visible;
+
+}
+
+.BossHealthPoint.Hidden
+{
+	visibility: collapse;
+}
+
+.BossNamePanel {
+	/*background-color:red;*/
+	margin-left: 190px;
+	width: 280px;
+	margin-top: 15px;
+}
+
+#boss_name
+{
+	text-align: center;
+	horizontal-align: center;
+	text-shadow: 1px 1px 2px 3.0 #000000;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	font-family: RadianceM,Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
+
+}
+
+.BossHealthPointProgressContainer {
+	width: 562px;
+	height: 28px;
+	margin-left:65px;
+	margin-top: 47px;
+	hue-rotation: 245deg;
+	saturation: 2;
+}
+
+
+#BossHPProgress
+{
+	width: 100%;
+	height: 100%;
+}
+
+.HPBurnerContainer {
+	overflow: clip;
+	width: 562px;
+	height: 100%;
+
+	border-radius: 3px;
+}
+
+
+#hp_burner {
+	width: 562px;
+	height: 28px;
+}
+
+#BossHPProgress.Hidden{
+	visibility:collapse;
+}
+
+#BossHPProgress_Left
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #1A3D1A  ), color-stop( 0.2, #67A163 ), color-stop( .5, #187019), to( #175D17 ) );
+}
+
+#BossHPProgress_Right
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #101932 ), color-stop( 0.2, #172447 ), color-stop( .5, #162244), to( #101932 ) );
+}
+
+.GameClockBackground {
+	vertical-align:top;
+	opacity: 0.1;
+}
+
+.GameClock {
+	font-size: 60px;
+	color: white;
+	font-family: RadianceM,Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
+}
+
+.NewLevelOverlay {
+	width:100%;
+	height:100%;
+
+	transition-property: pre-transform-scale2d, opacity;
+	transition-duration: 1.0s;
+	transition-timing-function: ease-out;
+}
+
+.NewLevelOverlay.EaseingOut {
+	pre-transform-scale2d: 2;
+	opacity: 0;
+}
+
+.NewLevelOverlay.NotShowing {
+	visibility:collapse;
+}
+
+.NewLevelMsg {
+	width: 100%;
+	height: 250px;
+	vertical-align: center;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000000 ), color-stop( 0.6, #111111ee ), to( #00000000 ) );
+
+	transition-property: opacity;
+	transition-duration: 1.0s;
+	transition-timing-function: ease-out;
+}
+
+.NewLevelMsg.NotShowing {
+	visibility:collapse;
+}
+
+.NewLevelMsg Label {
+	font-size: 120px;
+	color: white;
+	horizontal-align: center;
+	/*vertical-align: center;*/
+}
+
+.NewLevelOverlay.EaseingOut {
+	opacity: 0;
+}
+
+.CustomCoinsLabel {
+	vertical-align: center;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: right;
+	horizontal-align:right;
+	margin-top: 2px;
+	min-width: 60px;
+	margin-right: 40px;
+	width: 100%;
+	letter-spacing: 1px;
+	text-overflow:shrink;
+	color:#ffcc33;
+	text-shadow:0px 1px 0px 3.0 #00000077;
+}

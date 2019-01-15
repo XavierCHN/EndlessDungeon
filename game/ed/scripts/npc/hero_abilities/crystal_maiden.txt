@@ -1,0 +1,187 @@
+"DOTAAbilities"
+{
+	// 冰霜新星 1
+	"crystal_maiden_nova"
+	{
+		"BaseClass"		"ability_lua"
+		"AbilityTextureName"	"characters/crystal_maiden/crystal_maiden_nova"
+		"ScriptFile"		"abilities/characters/crystal_maiden/crystal_maiden_nova"
+		"MaxLevel"			"1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		
+		"AoERadius"		"%radius"
+
+		"AbilityCastPoint"		"0.25"
+
+		"precache"
+		{
+			"1"		"particles/characters/crystal_maiden/crystal_maiden_ice_nova.vpcf"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percentage"		"150"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_cost"				"20"
+			}
+		}
+	}
+	// 冰霜爆裂 1
+	"crystal_maiden_frost_explode"
+	{
+		"BaseClass"		"ability_lua"
+		"AbilityTextureName"	"characters/crystal_maiden/crystal_maiden_frost_explode"
+		"ScriptFile"		"abilities/characters/crystal_maiden/crystal_maiden_frost_explode"
+		"MaxLevel"			"1"
+
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		
+		"AbilityCastPoint"		"0.25"
+
+		"precache"
+		{
+			"1"		"particles/characters/crystal_maiden/crystal_maiden_frost_explode_projectile.vpcf"
+			"2"		"particles/characters/crystal_maiden/crystal_maiden_frost_explode.vpcf"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_percentage"		"400"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"mana_cost"				"20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cost_frost_level"		"5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"channel_time"			"1.0"
+			}
+		}
+	}
+	// 冰肌玉骨 1
+	"crystal_maiden_ice_carved"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"characters/crystal_maiden/crystal_maiden_ice_carved"
+		"ScriptFile"					"abilities/characters/crystal_maiden/crystal_maiden_ice_carved"
+		"MaxLevel"			"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityCastPoint"		"0.25"
+
+		"precache"
+		{
+			"1"		"particles/characters/crystal_maiden/crystal_maiden_ice_carved_buff.vpcf"
+			"2"		"particles/status_fx/status_effect_frost.vpcf"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_reduce_percentage"		"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_cost"				"20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"buff_duration"				"10"
+			}
+		}
+	}
+	// 寒冰领域 1
+	"crystal_maiden_snow_field"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"characters/crystal_maiden/crystal_maiden_snow_field"
+		"ScriptFile"					"abilities/characters/crystal_maiden/crystal_maiden_snow_field"
+		"MaxLevel"			"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AOERadius"		"%radius"
+
+		"precache"
+		{
+			"1"			"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
+			"2"			"particles/characters/crystal_maiden/crystal_maiden_snow_field_target.vpcf"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_radius"			"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_percentage"				"30"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_interval"				"2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"buff_duration"				"20"
+			}
+		}
+	}
+	// 冰冷之心
+	"crystal_maiden_frost_heart"
+	{
+		"BaseClass"	"ability_lua"
+		"AbilityTextureName"	"crystal_maiden_brilliance_aura"
+		"ScriptFile"	"abilities/characters/crystal_maiden/crystal_maiden_frost_heart"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"MaxLevel"		"1"
+	}
+}

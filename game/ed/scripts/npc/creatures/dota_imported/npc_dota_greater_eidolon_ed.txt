@@ -1,0 +1,76 @@
+"DOTAUnits"
+{
+	"npc_dota_greater_eidolon_ed"
+	{
+		//"ProjectileModel"		"particles/units/heroes/hero_enigma/enigma_base_attack_eidolon_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/heroes/enigma/eidelon.vmdl"
+		"SoundSet"		"Creep_Good_Range"
+		"ModelScale"		"1.2"
+		"Level"		"1"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"eidolon_splitter_eidolon"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"4"
+		"MagicalResistance"		"50"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"34"
+		"AttackDamageMax"		"42"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"1.5"
+		"AttackAnimationPoint"		"0.40000000596046"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"450"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"12"
+		"BountyGoldMin"		"22"
+		"BountyGoldMax"		"36"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
+		"HealthBarOffset"		"140"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"320"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"220"
+		"StatusHealthRegen"		"0.25"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1200"
+		"VisionNighttimeRange"		"800"
+	}
+}

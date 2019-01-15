@@ -1,0 +1,75 @@
+"DOTAUnits"
+{
+	"npc_dota_roshan_halloween_minion_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/baby_rosh_halloween/baby_rosh_dire/baby_rosh_dire.vmdl"
+		"SoundSet"		"Undying_Zombie"
+		"ModelScale"		"1.25"
+		"Level"		"8"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"5"
+		"MagicalResistance"		"33"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"250"
+		"AttackDamageMax"		"300"
+		"AttackRate"		"1"
+		"AttackAnimationPoint"		"0.25999999046326"
+		"AttackAcquisitionRange"		"5000"
+		"AttackRange"		"120"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"100"
+		"BountyGoldMin"		"100"
+		"BountyGoldMax"		"100"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"		"160"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"300"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"800"
+		"StatusHealthRegen"		"0"
+		"StatusMana"		"1000"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"2400"
+		"VisionNighttimeRange"		"2400"
+	}
+}

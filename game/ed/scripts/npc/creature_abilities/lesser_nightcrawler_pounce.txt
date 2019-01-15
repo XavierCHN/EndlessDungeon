@@ -1,0 +1,70 @@
+"DOTAAbilities"
+{
+	
+//=================================================================================================================
+// Lesser Nightcrawler: Pounce
+//=================================================================================================================
+"lesser_nightcrawler_pounce"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityName"					"lesser_nightcrawler_pounce"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"AbilityTextureName"			"slark_pounce"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"4.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"0"
+	
+	"precache"
+	{
+		"particle_folder"				"particles/units/heroes/hero_slark"
+	}
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"pounce_distance"		"700"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"pounce_speed"			"933.33"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"pounce_acceleration"	"7000.0"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"pounce_radius"			"95"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"pounce_damage"			"5"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"leash_duration"		"3.5"
+		}
+		"07"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"leash_radius"			"325"
+		}
+	}
+}
+}

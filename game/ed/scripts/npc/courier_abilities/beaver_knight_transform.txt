@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+	"beaver_knight_transform"
+	{
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName" "couriers/beaver_knight_transform"
+        "MaxLevel"      "1"
+
+        "BaseClass"             		"ability_datadriven"
+
+        "Modifiers"
+        {
+        	"modifier_beaver_knight_transform_passive"
+        	{
+        		"Passive"			"1"
+        		"IsHidden"			"1"
+        		"IsDebuff"			"0"
+			"OnKill"
+		        {
+		        	"RunScript"
+		        	{
+		        		"ScriptFile"	"abilities/couriers/beaver_knight_transform.lua"
+		        		"Function"		"OnBeaverKnightKill"
+		        	}
+		        }       
+                        "OnTakeDamage"
+                         {
+                                 "RunScript"
+                                {
+                                        "ScriptFile"    "abilities/couriers/beaver_knight_transform.lua"
+                                        "Function"              "OnBeaverKnightTakeDamage"
+                                }
+                         } 
+        	}
+        }
+	}
+}

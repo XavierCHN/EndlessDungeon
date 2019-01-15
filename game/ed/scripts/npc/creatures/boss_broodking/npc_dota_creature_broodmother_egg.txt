@@ -1,0 +1,57 @@
+"DOTAUnits"{
+//=================================================================
+// Broodmother
+//=================================================================
+"npc_dota_creature_broodmother_egg"
+{
+	"BaseClass"					"npc_dota_creature"
+	"Model"						"models/props_winter/egg.vmdl"
+	"CanBeDominated"			"0"
+
+	"Ability1"					"creature_hatch_broodmother"
+
+	"ArmorPhysical"				"0"
+	"MagicalResistance"			"75"
+
+	"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"0"		// Experience earn.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+	"HealthBarOffset"			"140"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"40"		// Base health.
+	"StatusHealthRegen"			"0"			// Health regeneration rate.
+	"StatusMana"				"0"			// Base mana.
+	"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"100"		// Range of vision during day light.
+	"VisionNighttimeRange"		"100"		// Range of vision at night time.
+
+	//Precache
+	//------------------------------------------------------------------
+	"Creature"
+	{
+		"HPGain"					"20"
+		"DamageGain"				"0"
+		"ArmorGain"					"0"
+		"MagicResistGain"			"0"
+		"MoveSpeedGain"				"0"
+		"BountyGain"				"0"
+		"XPGain"					"0"
+	}
+}
+}

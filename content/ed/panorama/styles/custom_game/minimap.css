@@ -1,0 +1,81 @@
+.MinimapRoot{
+	vertical-align: bottom;
+	horizontal-align: left;
+	opacity: 1.0;
+	flow-children:right;
+	/*margin-bottom: 20px;*/
+	/*margin-left:20px;*/
+	padding: -20px;
+	background-color: #01010144;
+	/*background-color: gradient(fro)*/
+}
+
+.MinimapColumn{
+	flow-children:down;
+}
+
+.MinimapCell {
+	width: 60px;
+	height:45px;
+	opacity: 0.8;
+	border-radius: 5px;
+	border: 3px solid gray;
+	background-size:100% 100%;
+}
+
+.CurrentCell{
+	opacity: 1.0;
+	border: 3px solid gold;
+}
+
+
+.EmptyCell {
+	opacity: 0.0;
+}
+
+/*	Invalid = -1,  -- 不可用
+	Start = 0,     -- 起始点
+	Normal = 1,    -- 普通房间
+	Bonus = 2,     -- 奖励房间
+	SemiBoss = 3,  -- 小BOSS房间
+	FinalBoss = 4, -- 最终BOSS房间
+	Hidden = 5, -- 隐藏房间（特殊奖励）*/
+.MinimapRoomType0{
+	background-image:url("file://{resources}/images/ui/minimap/start.png");
+}
+.MinimapRoomType1{
+	background-image:url("file://{resources}/images/ui/minimap/normal.png");
+}
+.MinimapRoomType2{
+	background-image:url("file://{resources}/images/ui/minimap/bonus.png");
+}
+.MinimapRoomType3{
+	background-image:url("file://{resources}/images/ui/minimap/semi_boss.png");
+}
+.MinimapRoomType4{
+	background-image:url("file://{resources}/images/ui/minimap/final_boss.png");
+}
+.MinimapRoomType5{
+	background-image:url("file://{resources}/images/ui/minimap/hidden.png");
+}
+.MinimapRoomType6{
+	background-image:url("file://{resources}/images/ui/minimap/shop.png");
+}
+.MinimapRoomType7{
+	background-image:url("file://{resources}/images/ui/minimap/arcade.png");
+}
+.MinimapRoomType8{
+	background-image:url("file://{resources}/images/ui/minimap/normal.png");
+}
+.MinimapRoomType9{
+	background-image:url("file://{resources}/images/ui/minimap/bank.png");
+}
+.MinimapRoomType10{
+	background-image:url("file://{resources}/images/ui/minimap/challenage.png");
+}
+.MinimapRoomType11{
+	background-image:url("file://{resources}/images/ui/minimap/cursed.png");
+}
+.MinimapRoomType12{
+	background-image:url("file://{resources}/images/ui/minimap/item.png");
+}

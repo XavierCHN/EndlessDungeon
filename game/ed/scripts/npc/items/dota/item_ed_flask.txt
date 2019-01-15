@@ -1,0 +1,77 @@
+"DOTAAbilities"
+{
+	"item_ed_flask"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"dota/flask"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemKillable"					"0"
+		"AbilityCastPoint"				"0.0"
+		
+		"Model"							"models/props_gameplay/salve.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+        "ItemInitialCharges"            "1"
+
+        "OnEquip"
+        {
+        	"SpendCharge" {}
+        	"RunScript"
+        	{
+        		"ScriptFile"	"items/dota/item_ed_flask.lua"
+        		"Function"		"OnEquipFlask"
+        		"Amount"		"10"
+        	}
+        }
+	}
+
+	"item_flask_half"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"dota/flask_half"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemKillable"					"0"
+		"AbilityCastPoint"				"0.0"
+
+
+		"Model"							"models/props_gameplay/salve_blue.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+        "ItemInitialCharges"            "1"
+
+        "OnEquip"
+        {
+        	"SpendCharge" {}
+        	"RunScript"
+        	{
+        		"ScriptFile"	"items/dota/item_ed_flask.lua"
+        		"Function"		"OnEquipFlask"
+        		"Amount"		"5"
+        	}
+        }
+	}
+}

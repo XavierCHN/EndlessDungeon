@@ -1,0 +1,47 @@
+"DOTAAbilities"
+{
+	"broodking_shoot"
+	{
+		"BaseClass"		"ability_lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ScriptFile"		"abilities/creatures/boss_broodking/broodking_shoot.lua"
+
+		"precache"
+		{
+			"1"			"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
+			"2"			"particles/creatures/semi_boss/broodking/broodking_projectile.vpcf"
+			"3"			"particles/units/heroes/hero_broodmother/broodmother_spiderlings_spawn.vpcf"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"shoot_interval"			"5"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bullet_count"			"3"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bullet_start_location_radius"			"100"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bullet_end_location_radius"			"100"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"projectile_speed"			"1000"
+			}
+			
+		}
+	}
+}

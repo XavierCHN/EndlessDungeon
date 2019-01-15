@@ -1,0 +1,70 @@
+"DOTAUnits"
+{
+	"npc_dota_lycan_wolf4_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/heroes/lycan/summon_wolves.vmdl"
+		"SoundSet"		"Lycan_Wolf"
+		"ModelScale"		"0.99000000953674"
+		"Level"		"3"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"lycan_summon_wolves_critical_strike"
+		"Ability2"		"lycan_summon_wolves_invisibility"
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+		"MagicalResistance"		"80"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"44"
+		"AttackDamageMax"		"48"
+		"AttackRate"		"0.89999997615814"
+		"AttackAnimationPoint"		"0.33000001311302"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"90"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"20"
+		"BountyGoldMin"		"41"
+		"BountyGoldMax"		"41"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
+		"HealthBarOffset"		"160"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"460"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"320"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1200"
+		"VisionNighttimeRange"		"800"
+	}
+}

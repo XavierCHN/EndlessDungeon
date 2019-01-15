@@ -1,0 +1,105 @@
+"addon"
+{
+
+	"cota_hud_loading_screen_chapter"			"第 {d: chapter} 章"
+	"cota_hud_loading_screen_chapter_1"			"CN DOTO BEST DOTO"
+
+	"npc_dota_creature_huskar"			"单车武士"
+	"npc_dota_creature_boss_nevermore"  "魂之挽鸽"
+	"npc_dota_creature_boss_bristleback"    "刚被牛"
+	"npc_dota_creature_boss_pudge"			"帕吉"
+	"npc_dota_creature_boss_techies"		"炸弹人"
+	"npc_dota_creature_boss_brood_mother"		"育母蜘蛛"
+
+	"new_level_text_center_tooltip"		"第 {d:new_level} 层"
+
+	"DOTA_HUD_StrengthDetails"		"每点力量奖励1点生命值。"
+	"DOTA_HUD_IntelligenceDetails"	"每点智力奖励1点幸运值。"
+	"DOTA_HUD_AgilityDetails"		"每点敏捷奖励1点移动速度和1点攻击速度。"
+
+	"couriers"		"信使"
+	"particles"		"粒子特效"
+	"close"		"关闭"
+	"passive_ability"		"天赋技能"
+	"purchase_tooltip_gem"		"消耗 {d:cost_gem} 宝石购买"
+	"purchase_tooltip_point"		"消耗 {d:cost_point} 点数购买"
+	"owned"		"已经拥有"
+	"next_page"		"下一页"
+
+	"reroll"		"重新随机"
+	"reroll_tooltip"	"好像都没啥好东西，让商人换一批新的货物。不过，价钱就要额外贵一些了。"
+	
+	"lore_text_page1"		"破碎大陆，晴雪城东北，苍白之巢之下，有一片创世神曾经的栖息之所——玉湖林。\n在这片战火从不侵扰的乐园中，居住着这个世界上最为可爱的生灵。"
+	"lore_text_page2"		"他们不属于纷争的任何一方，也从不战斗。可天性乐于助人的他们，总是会响应战场上英雄们的召唤，作为信使，为英雄们送去他们急需的各类物品。\n千百年来，皆是如此。"
+	"lore_text_page3"		"可是有一天，暗月来袭……"
+	"lore_text_page4"		"这个世界曾经的英雄们，因为受到暗月的腐化，变得乖张暴戾……"
+	"lore_text_page5"		"信使之中，也有一些受到了影响。\n英雄们身上的力量不再受到殇月碎片的压制，这个世界已经危在旦夕……"
+	"lore_text_page6"		"虽然力量弱小，尽管前路充满了迷雾，他们也要拿起剑，为了这个世界而战……"
+
+	"courier_lore_gold_greevil"		"一种奇异的野兽，体内魔力充盈。他全身闪耀着的金色光辉，可能是偷吃了太多的金币吧。"
+	"courier_lore_juggernaut_dog"		"一条装备精良，跟随主人进入战场的狗。这头野兽已经见过了许多恐怖的死亡和伟大的胜利。在那优质桦木制成的面具下隐藏着无欲的审判。"
+	"courier_lore_donkey"		"这只是信使大家庭最普通的一员，但是毫无疑问，他们是最勤劳的。"
+	"courier_lore_beaver_knight"		"这只小东西，从来就不知恐惧为何物，只要握紧手中剑，它就敢于面对任何可怕的怪兽。"
+	"courier_lore_minipudge"		"他们说小伙子吃得饱就会笑呵呵。那是他们没遇见过帕吉。如果你在路上想要吃一口的零食，那帕吉正好有哦。"
+	"courier_lore_frog"		"苟……"
+	"courier_lore_babyroshan"		"他只是一个小家伙，他还不懂事，也不知道不朽到底意味着什么，但是大人们难道就知道了吗？"
+	"courier_lore_bearzky"		"据说他的偶像是韦恩·格雷茨基。"
+	"courier_lore_drodo"		"这种美味的龙类生物在萨玛瑞恩海域被人发现，后来几乎快被饥饿的海员们捕食至灭绝。巨鸟缺乏大多数生物所拥有的警觉天性，但它们那对他人无限的信任使它们在激烈的战场上成为了优秀的信使。"
+	"courier_lore_winter_wyvern"		"在傲洛斯体内，其他龙点燃龙炎的器官熔炼的是难以想象的寒冷。虽然这只是一只小家伙，但是从她咽喉的深处呼出的气也能敌人送入烧灼的痛苦中。"
+
+
+	"courier_name_babyroshan"		"肉山宝宝"
+	"courier_name_drodo"		"巨鸟多多"
+	"courier_name_juggernaut_dog"		"不屈战犬"
+	"courier_name_minipudge"		"迷你屠夫"
+	"courier_name_winter_wyvern"		"小冰龙"
+	"courier_name_donkey"		"小毛驴"
+	"courier_name_frog"		"青蛙"
+	"courier_name_bearzky"		"小白熊"
+	"courier_name_gold_greevil"		"纯金·小贪魔"
+	"courier_name_beaver_knight"		"海狸骑士"
+
+	"courier_subtitle_frog"		"长者"
+	"courier_subtitle_juggernaut_dog"		"上古“凶兽”"
+	"courier_subtitle_minipudge"		"吃货"
+	"courier_subtitle_bearzky"		"业余冰球队员"
+	"courier_subtitle_beaver_knight"		"勇者"
+	"courier_subtitle_winter_wyvern"		"巨龙"
+	"courier_subtitle_drodo"		"内测尊享"
+	"courier_subtitle_babyroshan"		"传说信使"
+	"courier_subtitle_donkey"		"普通"
+	"courier_subtitle_gold_greevil"		"壕"
+
+
+	"DOTA_Tooltip_Ability_babyroshan_aegis"                 "不朽之守护"
+    "DOTA_Tooltip_Ability_babyroshan_aegis_Description"     "最大生命值变为10，且无法获得增加生命值的物品，死亡时游戏不会结束，直到死亡次数达到9次。"
+    "DOTA_Tooltip_Ability_babyroshan_aegis_Lore"            "这东西肯定是它从他爸爸那偷来的。"
+    "DOTA_Tooltip_modifier_babyroshan_aegis_death_counter"  "不朽之守护·死亡计数"
+
+    "DOTA_Tooltip_Ability_bearzky_snow_ball"                 "雪球"
+    "DOTA_Tooltip_Ability_bearzky_snow_ball_Description"     "作为一名冰球运动员，他的移动速度得到了提升，攻击方式也变成了雪球攻击，只不过这雪球扔的不太远。"
+    "DOTA_Tooltip_Ability_bearzky_snow_ball_Lore"            "这个调皮的小家伙，把雪球当做了武器。"
+
+	"DOTA_Tooltip_Ability_drodo_fish_attack"				"咸鱼攻击"
+	"DOTA_Tooltip_Ability_drodo_fish_attack_Description"	"巨鸟多多虽然身材羸弱，但是可是捉鱼的一把好手。"
+	"DOTA_Tooltip_Ability_drodo_fish_attack_Lore"			"别惹怒巨鸟多多，小心它用鱼打你哦"
+
+	"DOTA_Tooltip_Ability_gold_greevil_drop_gold"				"巨富"
+	"DOTA_Tooltip_Ability_gold_greevil_drop_gold_Description"	"每当完成一个房间，有50%的概率获得一枚金币。"
+	"DOTA_Tooltip_Ability_gold_greevil_drop_gold_Lore"			"知道富可敌国怎么写吗？"
+
+	"DOTA_Tooltip_Ability_beaver_knight_transform"				"变身"
+	"DOTA_Tooltip_Ability_beaver_knight_transform_Description"	"当海狸骑士完成连续击杀，就可以变身，变得更强！"
+	"DOTA_Tooltip_Ability_beaver_knight_transform_Lore"			"你永远不知道这只小东西心中的伟大梦想是什么。"
+
+	"boss_speech_huskar_poison_milk_text_1"		"我今天就是充分证明，SF已经不适合这个版本了。"
+	"boss_speech_huskar_poison_milk_text_2"		"UNiVeRsE这个人，他基本上不失误。"
+	"boss_speech_huskar_poison_milk_text_3"		"我不是那种一崩崩到底的选手。"
+	"boss_speech_huskar_poison_milk_text_4"		"这波Navi，现在已经是一只脚，插在冠军的门里面了。"
+	"boss_speech_huskar_poison_milk_text_5"		"感觉，今年的冠军就要出现啦！"
+
+    "boss_speech_slardar_i_have_high_level_sun_strike"  	"我有高等级天火！"
+    "boss_speech_slardar_rua"  								"RUA！"
+    "boss_speech_slardar_very_anxious_very_critical"  		"很急很关键！"
+
+}

@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+	"jugg_linear_blade"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		"AbilityCastPoint"				"0"
+
+		"AbilityCooldown"				"2"
+
+		"OnSpellStart"
+		{
+			"SpawnUnit"
+			{
+				"UnitName"		"npc_dota_creature_jugg_linear_blade"
+				"Target" 		"POINT"
+				"Duration"		"2"
+				"UnitCount"		"1"
+				"UnitLimit"		"0"
+				"GrantsGold"	"0"
+				"GrantsXP"		"0"
+				"SpawnRadius"	"0"
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+"DOTAAbilities"
+{
+	"item_ed_aegis"
+	{
+		// 不朽盾
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"dota/aegis"
+		"Model"		"models/props_gameplay/aegis.vmdl"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"ItemCost"						"99999"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"artifact"
+		"ItemQuality"					"artifact"
+		"ItemStackable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+
+        // "Modifiers"
+        // {
+        // 	"modifier_ed_aegis_passive"
+        // 	{
+        // 		"Passive"			"1"
+        // 		"IsHidden"			"0"
+        // 		"IsDebuff"			"0"
+
+        // 		"Attributes"		"MODIFIER_ATTRIBUTE_PERMANENT"
+        		"OnOwnerDied"
+        		{
+        			// 3秒之后复活
+        			"RunScript"
+        			{
+        				"ScriptFile"	"items/dota/item_ed_aegis.lua"
+        				"Target"		"CASTER"
+        				"Function"		"OnAegieHolderDead"
+        			}
+        			"RunScript"
+        			{
+        				"ScriptFile"	"test_kv.lua"
+        				"Function"		"test"
+        			}
+        		}
+        // 	}
+        // }
+	}
+}

@@ -1,0 +1,40 @@
+"DOTAAbilities"
+{
+	"creature_invulnerable"
+	{
+		"BaseClass"             		"ability_datadriven"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"Modifiers"
+		{
+			"modifier_creature_take_no_damage"
+			{
+				"Passive"			"1"
+				"States"
+				{
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
+	"creature_no_health_bar"
+	{
+		"BaseClass"             		"ability_datadriven"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"Modifiers"
+		{
+			"modifier_creature_no_health_bar"
+			{
+				"Passive"			"1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+}

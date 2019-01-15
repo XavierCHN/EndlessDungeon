@@ -1,0 +1,118 @@
+"DOTAUnits"{
+//=================================================================
+// Brood Queen
+//=================================================================
+"npc_dota_creature_broodking"
+{
+	// General
+	//
+	"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+	"Model"						"models/heroes/broodmother/broodmother.vmdl"	// Model.
+	"SoundSet"					"Hero_Broodmother"					// Name of sound set.
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
+	"ModelScale"				"2.0"								// old 1.0
+	"Level"						"1"
+	"ConsideredHero"			"1"
+	"MinimapIcon"				"minimap_roshancamp"
+	"MinimapIconSize"			"300"
+	
+	"precache"
+	{
+		"particle_folder"	"particles/units/heroes/hero_broodmother"
+	}
+
+	// Abilities
+	//----------------------------------------------------------------
+	
+	"Ability1"					"creature_spin_web"					// Ability 1.
+	"Ability2"					"creature_spawn_broodmother_eggs"	// Ability 2
+	"Ability3"					"creature_self_haste"				// Ability 3.
+	"Ability4"					"broodmother_incapacitating_bite"	// Ability 4.
+	"Ability5"					"broodking_shoot"		// Ability 5.
+	"Ability6"					""			// Ability 6 - Extra.
+	"Ability7"					""			// Ability 7 - Extra.
+	"Ability8"					""			// Ability 8 - Extra.
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"0"		// Physical protection.
+	"MagicalResistance"			"0"		// Magical protection.
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"20"		// Damage range min.
+	"AttackDamageMax"			"20"		// Damage range max.
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+	"AttackRate"				"1.35"		// Speed of attack.
+	"AttackAnimationPoint"		"0.9"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"1200"		// Range within a target can be acquired.
+	"AttackRange"				"100"		// Range within a target can be attacked.
+	"ProjectileModel"			""			// Particle system model for projectile.
+	"ProjectileSpeed"			""			// Speed of projectile.
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"0"		// Experience earn.
+	"BountyGoldMin"				"1"		// Gold earned min.
+	"BountyGoldMax"				"1"		// Gold earned max.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"			// Hull type used for navigation/locomotion.
+	"HealthBarOffset"			"140"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"			// Type of locomotion - ground, air
+	"MovementSpeed"				"300"		// Speed
+	"MovementTurnRate"			"0.8"		// Turning rate.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"500"		// Base health.
+	"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+	"StatusMana"				"0"			// Base mana.
+	"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+	//Precache
+	//------------------------------------------------------------------
+	"VoiceFile"				"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
+	
+	"ShouldDoFlyHeightVisual" "0"
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{			
+		"AttachWearables"
+		{
+			"Wearable1"
+			{
+				"ItemDef"			"101"		
+			}
+			"Wearable2"
+			{
+				"ItemDef"			"102"		
+			}
+			"Wearable3"
+			{
+				"ItemDef"			"103"		
+			}
+		}
+
+			"DisableResistance"			"50.0"
+
+			
+			"HPGain"					"200"
+			"DamageGain"				"10"
+			"MoveSpeedGain"				"10"
+	}
+}
+}

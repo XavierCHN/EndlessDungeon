@@ -1,0 +1,76 @@
+"DOTAUnits"
+{
+	"npc_dota_nevermore_requiem_treant"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/heroes/furion/treant.vmdl"
+		"SoundSet"		"Furion_Treant"
+		"ModelScale"		"0.90000001192093"
+		"Level"		"2"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"0"
+		"MagicalResistance"		"0"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"90"
+		"AttackDamageMax"		"102"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"1.75"
+		"AttackAnimationPoint"		"0.46700000762939"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"100"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"30"
+		"BountyGoldMin"		"18"
+		"BountyGoldMax"		"24"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_REGULAR"
+		"HealthBarOffset"		"170"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"200"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"250"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"500"
+		"VisionNighttimeRange"		"500"
+	}
+}

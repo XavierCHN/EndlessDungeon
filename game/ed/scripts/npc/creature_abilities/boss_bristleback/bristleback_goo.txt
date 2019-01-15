@@ -1,0 +1,137 @@
+"DOTAAbilities"
+{
+    "bristleback_goo"
+    {
+        "BaseClass"         "ability_datadriven"
+
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "OnSpellStart"
+        {
+
+            "TrackingProjectile"
+            {
+                "Target"            "TARGET"
+                "EffectName"        "particles/econ/items/bristleback/ti7_head_nasal_goo/bristleback_ti7_nasal_goo_proj.vpcf"
+                "Dodgeable"         "0"
+                "ProvidesVision"    "0"
+                "VisionRadius"      "0"
+                "MoveSpeed"         "1200"
+                "SourceAttachment"  "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+            }
+
+            "FireSound"
+            {
+                "EffectName"    "Hero_Bristleback.ViscousGoo.Cast"
+                "Target"         "CASTER"
+            }
+        }
+
+        "OnProjectileHitUnit"
+        {
+        	"DeleteOnHit"	"1"
+        	"CreateThinker"
+        	{
+        		"ModifierName"	"modifier_bristle_goo_thinker"
+        		"Target"
+        		{
+        			"Center"	"TARGET"
+        		}
+        	}
+
+            "FireSound"
+            {
+                "EffectName"    "Hero_Bristleback.ViscousGoo.Target"
+                "Target"         "TARGET"
+            }
+        }
+
+        "Modifiers"
+        {
+        	"modifier_bristle_goo_thinker"
+        	{
+        		"Passive"			"0"
+        		"IsHidden"			"0"
+        		"IsDebuff"			"0"
+
+				"Aura"					"creature_boss_bristleback_goo"
+				"Aura_Radius"			"%radius"
+				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+				"Aura_Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				"Duration"				"%duration"
+
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"		"particles/units/heroes/hero_alchemist/alchemist_acid_spray.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"Target"			"TARGET"
+						"ControlPoints"
+						{
+							"00" "0 0 0"
+							"01" "%radius 1 1"
+							"15" "242 225 0"
+							"16" "1 0 0"
+						}
+					}
+				}
+			}
+
+			"creature_boss_bristleback_goo"
+			{
+				"IsDebuff"		"1"
+				"IsPurgable"	"0"
+				"EffectName"	"particles/units/heroes/hero_alchemist/alchemist_acid_spray_debuff.vpcf"
+				"ThinkInterval"	"%tick_rate"
+				"OnIntervalThink"
+				{
+					"Damage"
+					{
+						"Damage"	"%damage"
+						"Target"	"TARGET"
+					}
+				}
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT" "%movespeed_slow"
+				}
+			}
+        }
+
+        "AbilitySpecial"
+        {
+        	"01"
+        	{
+        		"var_type"			"FIELD_INTEGER"
+        		"movespeed_slow"			"-100"
+        	}
+        	"02"
+        	{
+        		"var_type"			"FIELD_FLOAT"
+        		"tick_rate"			"1.0"
+        	}
+        	"03"
+        	{
+        		"var_type"			"FIELD_FLOAT"
+        		"damage"			"40"
+        	}
+        	"04"
+        	{
+        		"var_type"		"FIELD_INTEGER"
+        		"radius"		"400"
+        	}
+
+        	"05"
+        	{
+        		"var_type"	"FIELD_INTEGER"
+        		"duration"		"5"
+        	}
+        }
+    }
+}

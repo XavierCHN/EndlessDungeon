@@ -1,0 +1,9 @@
+"DOTAAbilities"
+{
+	"creature_attack"
+	{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"abilities/creatures/creature_attack.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+}

@@ -1,0 +1,9 @@
+"DOTAAbilities"
+{
+	"creature_nevermore_requiem"
+	{
+		"Baseclass"		"ability_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ScriptFile"		"abilities/creatures/boss_pis/creature_nevermore_requiem.lua"
+	}
+}

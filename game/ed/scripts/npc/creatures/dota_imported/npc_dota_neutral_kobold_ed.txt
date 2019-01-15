@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_kobold_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_kobold/kobold_c/n_creep_kobold_c.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"1"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"0"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"10"
+		"AttackDamageMax"		"11"
+		"AttackRate"		"1.3500000238419"
+		"AttackAnimationPoint"		"0.37999999523163"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"100"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"25"
+		"BountyGoldMin"		"7"
+		"BountyGoldMax"		"9"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"130"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"270"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"240"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1400"
+		"VisionNighttimeRange"		"800"
+	}
+}

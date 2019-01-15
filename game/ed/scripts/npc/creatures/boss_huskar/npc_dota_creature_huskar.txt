@@ -1,0 +1,92 @@
+"DOTAUnits"
+{
+	"npc_dota_creature_huskar"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+		"Model"						"models/heroes/huskar/huskar.vmdl"	// Model.
+		"ModelScale"				"1"
+		"SoundSet"                  "Hero_Huskar"
+		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
+		"VoiceFile"					"soundevents/voscripts/game_sounds_heroes/game_sounds_huskar.vsndevts"
+		"Level"						"1"
+		"UseNeutralCreepBehavior" 	"0"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		"AbilityLayout"		""
+		"Ability1"					"creature_huskar_invulnerable"			// Ability 1.
+		"Ability2"					"creature_huskar_burning_spear"			// Ability 2.
+		"Ability3"					"creature_huskar_poison_milk"			// Ability 3.
+		"Ability4"					"creature_huskar_inner_vatility"			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+		"MagicalResistance"			"0"		// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"20"								// Damage range min.
+		"AttackDamageMax"			"20"								// Damage range max.
+		"AttackRate"				"1.4"								// Speed of attack.
+		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"2000"								// Range within a target can be acquired.
+		"AttackRange"				"2000"								// Range within a target can be attacked.
+		"ProjectileModel"			"particles/units/heroes/hero_clinkz/clinkz_base_attack.vpcf"				// Particle system model for projectile.
+		"ProjectileSpeed"			"900"								// Speed of projectile.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"1"		// Gold earned min.
+		"BountyGoldMax"				"1"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"70"
+		"HealthBarOffset"			"200"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"350"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+		
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1500"			// Base health.
+		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
+		"StatusMana"				"300"			// Base mana.
+		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
+
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+
+		// Creature Data
+		//----------------------------------------------------------------------------------------------------------------------
+		"Creature"
+		{
+				
+			"AttachWearables"
+			{
+				"Wearable1"	{ "ItemDef" "4299" } //heat bow
+				"Wearable2"	{ "ItemDef"	"4748" } //skull
+				"Wearable3" { "ItemDef"	"4749" } //gauntlets
+				"Wearable4" { "ItemDef"	"4300" } //lost hill shield
+				"Wearable5" { "ItemDef"	"4301" } //pauldrons
+			}
+			"DisableResistance"			"100.0"
+		}
+	}
+}

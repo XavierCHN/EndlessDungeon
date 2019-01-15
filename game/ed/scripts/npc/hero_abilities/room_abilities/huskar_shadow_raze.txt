@@ -1,0 +1,31 @@
+"DOTAAbilities"
+{
+    "huskar_shadow_raze"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             "ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "AbilityTextureName"            "nevermore_shadowraze1"
+
+        "AbilityCooldown"               "2"
+
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_nevermore/nevermore_shadowraze.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
+        }
+
+        "OnSpellStart"
+        {
+            "RunScript"
+            {
+                "ScriptFile"        "abilities/room_abilities/huskar_shadow_raze.lua"
+                "Function"          "OnShadowRaze"
+                "Target"            "CASTER"
+            }
+        }
+    }
+}

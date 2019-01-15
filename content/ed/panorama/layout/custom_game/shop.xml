@@ -1,0 +1,68 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/shops.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/shops.js" />
+	</scripts>
+	<Panel class="ShopUIRoot NotShowing">
+		<Image class="ShopBackground NormalShop" id="shop_background" />
+		<!--消耗品-->
+		<Panel class="ShopItems">
+			<Panel class="ShopItem ShopItemConsumable" id="shop_item_consumable"
+				   onactivate="PlayerPurchaseItem(1)"
+				   onmouseover="ShowItemTooltip(1)"
+				   onmouseout="HideItemTooltip(1)">
+				<DOTAItemImage id="item_image_consumable" class="ItemImage" itemname="item_key" />
+				<Panel class="ItemCost">
+					<Image class="ItemCostCoin" />
+					<Label class="ItemCostValue" id="item_cost_consumable" text="999999" />
+				</Panel>
+			</Panel>
+			<!--基础物品-->
+			<Panel class="ShopItem ShopItemBasicItem" id="shop_item_basic_item"
+				   onactivate="PlayerPurchaseItem(2)"
+				   onmouseover="ShowItemTooltip(2)"
+				   onmouseout="HideItemTooltip(2)">
+				<DOTAItemImage id="item_image_basic" class="ItemImage" itemname="item_ed_bottle" />
+				<Panel class="ItemCost">
+					<Image class="ItemCostCoin" />
+					<Label class="ItemCostValue" id="item_cost_basic" text="999999" />
+				</Panel>
+			</Panel>
+			<!--卷轴-->
+			<Panel class="ShopItem ShopItemRecipe" id="shop_item_recipe"
+				   onactivate="PlayerPurchaseItem(3)"
+				   onmouseover="ShowItemTooltip(3)"
+				   onmouseout="HideItemTooltip(3)">
+				<DOTAItemImage id="item_image_recipe" class="ItemImage" itemname="item_ed_bottle" />
+				<Panel class="ItemCost">
+					<Image class="ItemCostCoin" />
+					<Label class="ItemCostValue" id="item_cost_recipe" text="999999" />
+				</Panel>
+			</Panel>
+
+			<!--meme-->
+			<Panel class="ShopItem ShopItemMeme" id="shop_item_meme"
+				   onactivate="PlayerPurchaseItem(4)"
+				   onmouseover="ShowItemTooltip(4)"
+				   onmouseout="HideItemTooltip(4)">
+				<DOTAItemImage id="item_image_meme" class="ItemImage" itemname="item_key" />
+				<Panel class="ItemCost">
+					<Image class="ItemCostCoin" />
+					<Label class="ItemCostValue" id="item_cost_meme" text="999999" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<!--重新随机按钮-->
+		<Panel class="ButtonBevel RerollButton" id="reroll_button"
+			   onactivate="OnPlayerReroll()"
+			   onmouseover="ShowRerollTooltip()"
+			   onmouseout="HideRerollTooltip()"
+		>
+			<Image class="RerollDice" />
+			<Label text="#reroll" />
+		</Panel>
+	</Panel>
+</root>

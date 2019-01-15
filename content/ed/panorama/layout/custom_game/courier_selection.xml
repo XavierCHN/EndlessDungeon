@@ -1,0 +1,92 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/utils.js" />
+        <include src="file://{resources}/scripts/custom_game/courier_selection.js" />
+    </scripts>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/courier_selection.css" />
+    </styles>
+    <Panel class="CourierSelection_Root" hittest="false">
+
+        <Panel class="CouriersSelectionPanel CourierSelection Hidden" id="courier_selection_panel">
+            <DOTAScenePanel id="courier_selection_scene" camera="camera_bearzky" class="CourierScene" particleonly="false" map="background/select_hero"  />
+            <DOTAScenePanel id="button_fx" class="SceneLoaded" map="scenes/sparkles" camera="shot_camera" />
+
+            <!--顶部的tab条-->
+            <Panel class="TopBar" id="top_bar">
+                <Panel class="TopBarBackground" />
+                <Panel class="TopBarButtons LeftRightFlow">
+                    <!-- 顶部tab，我的信使 -->
+                    <RadioButton class="TopBarCouriers TopBarMenuItem" id="top_bar_couriers_button" onactivate="ShowCourierSelection()">
+                        <Panel class="RadioBox" />
+                        <Label text="#Couriers" />
+                    </RadioButton>
+                    <!-- 顶部tab，信使附件 -->
+                    <!-- 暂时禁用 -->
+                    <!-- <RadioButton class="TopBarItems TopBarMenuItem" style="visibility" onactivate="ShowParticleSelection()">
+                        <Panel class="RadioBox" />
+                        <Label text="#Particles" />
+                    </RadioButton> -->
+                </Panel>
+            </Panel>
+
+            <!--选择信使按钮-->
+            <Button id="select_button" class="ButtonBevel" onactivate="SelectCourier()">
+                <Label id="select_button_label_choose" text="#choose" />
+            </Button>
+
+            <!--关闭按钮-->
+            <Button id="close_button" class="CloseButton" onactivate="Close()" />
+
+            <!--信使信息-->
+            <Panel class="CourierInformation">
+                <Panel class="InformationBackground" />
+                <Panel class="InformationBody">
+                    <Panel class="InformationHeader" id="information_header">
+                        <Label id="courier_name" text="#courier_name_babyroshan" />
+                        <Label id="courier_subtitle" text="#courier_subtitle_babyroshan" />
+                    </Panel>
+                    <Label class="InformationLore" id="courier_lore" text="#courier_lore_babyroshan"/>
+
+                    <Label class="CourierAbilityTip" id="courier_ability_name" text="#passive_ability" />
+                    <Panel class="CourierAbilityContainer">
+                        <DOTAAbilityImage class="CourierAbility" id="courier_ability" abilityname="antimage_mana_break"/>
+                    </Panel>
+                    <Label class="CourierAbilityDescription" id="courier_ability_description" text="#DOTA_Tooltip_Ability_ed_courier_passive" html="true" />
+                </Panel>
+                <Panel class="PurchaseButtonPanel">
+
+                    <!--如果已经拥有，使用一个已经拥有的Label来取代购买按钮-->
+                    <Label class="OwnedLabel" text="#owned" />
+
+                    <!--购买按钮-->
+                    <Panel class="PurchaseButton Point Hidden" id="purchase_button_point">
+                        <Panel class="PurchaseButtonContext">
+                            <Image class="PurchaseImage" />
+                            <Label class="PurchaseStringPoint" text="#purchase_tooltip_point" />
+                        </Panel>
+                    </Panel>
+                    <Panel class="PurchaseButton Gem Hidden" id="purchase_button_gem">
+                        <Panel class="PurchaseButtonContext">
+                            <Image class="PurchaseImage" />
+                            <Label class="PurchaseStringGem" text="#purchase_tooltip_gem" />
+                        </Panel>
+                    </Panel>
+                </Panel>
+            </Panel>
+
+            <!--信使向左向右的选择-->
+            <Panel class="Arrow Left CourierPageArrow" onactivate="SelectPrevCourier()" />
+            <Label id="prev_courier_label" class="CourierNamePredict" />
+            <Panel class="Arrow Right CourierPageArrow" onactivate="SelectNextCourier()" />
+            <Label id="next_courier_label" class="CourierNamePredict" />
+
+            <!--粒子特效面板-->
+            <Panel class="ParticlesSelectionPanel">
+                <Panel class="ParticleButtons" id="courier_particle_buttons_panel">
+                </Panel>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

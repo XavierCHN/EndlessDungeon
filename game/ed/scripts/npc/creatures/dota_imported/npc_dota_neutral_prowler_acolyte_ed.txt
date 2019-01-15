@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_prowler_acolyte_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_satyr_spawn_a/n_creep_satyr_spawn_b.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"1"
+		"Level"		"3"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"spawnlord_aura"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"10"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"33"
+		"AttackDamageMax"		"38"
+		"AttackRate"		"1.5"
+		"AttackAnimationPoint"		"0.8299999833107"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"100"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"62"
+		"BountyGoldMin"		"74"
+		"BountyGoldMax"		"82"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"200"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"270"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"600"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"400"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

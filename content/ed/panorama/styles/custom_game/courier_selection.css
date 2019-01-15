@@ -1,0 +1,420 @@
+.CourierSelection_Root{
+    width:100%;
+    height:100%;
+
+    /*background-image:url("s2r://panorama/images/compendium/spring2016/store/bp_large_upsell_psd.vtex");*/
+}
+
+.CouriersSelectionPanel {
+    vertical-align: center;
+    horizontal-align: center;
+    width: 100%;
+    height: 100%;
+    background-color:#010101;
+}
+
+.CourierScene {
+    width: 100%;
+    height: 100%;
+}
+
+#button_fx {
+    width:800px;
+    height:230px;
+    vertical-align:bottom;
+    margin-left:250px;
+    margin-bottom:25px;
+    hue-rotation:230deg;
+    brightness:5;
+    contrast:1.2;
+    saturation:1;
+    wash-color:#f008;
+    opacity-mask:url("s2r://panorama/images/masks/softedge_circle_png.vtex");
+}
+
+#button_fx:hover {
+    hue-rotation:220deg;
+}
+
+#select_button {
+    vertical-align:bottom;
+    margin-bottom: 100px;
+    margin-left:500px;
+    width: 300px;
+    height:80px;
+
+    border-radius: 8px;
+    background-image:url("s2r://panorama/images/textures/glassbutton_pink_psd.vtex");
+    background-size:100%;
+
+    transition-property: brightness, hue-rotation, background-image;
+    transition-duration:0.3s;
+    transition-timing-function: ease-in;
+}
+
+#select_button:hover {
+    brightness:5;
+    hue-rotation:-5deg;
+}
+
+#select_button Label {
+    font-size: 40px;
+}
+
+.CourierInformation {
+    horizontal-align:right;
+    vertical-align:center;
+
+    height: 65%;
+    width:30%;
+
+    margin-right: 200px;
+
+    transition-property: transform, opacity;
+    transition-duration:0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.ParticleSelection .CourierInformation{
+    transform: translatey(300px);
+    opacity:0;
+}
+
+.InformationBackground {
+    width: 100%;
+    height:100%;
+    background-image:url("s2r://panorama/images/leaf_pages/debut_arcana_juggernaut/debut_brush_bg_psd.vtex");
+    background-size:contain;
+    background-repeat:no-repeat;
+    wash-color:#1D525D;
+    opacity:0.9;
+
+    transition-property: wash-color;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.InformationBody {
+    flow-children: down;
+    width:100%;
+    height:100%;
+}
+
+.InformationHeader{
+    horizontal-align: center;
+    flow-children:down;
+    width:100%;
+    margin-top: 80px;
+}
+
+#courier_name{
+    horizontal-align:center;
+
+    font-size:50px;
+    letter-spacing: 3px;
+    text-overflow:shrink;
+    height:54px;
+
+    color:#34EEC5;
+    font-family:Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-shadow:0px 1px 12px 3.0 #00000088;
+    horizontal-align:center;
+}
+
+#courier_subtitle {
+    margin-top:5px;
+    horizontal-align:center;
+}
+
+#courier_lore {
+    margin-top:40px;
+    horizontal-align:center;
+    width: 320px;
+}
+
+.CourierAbilityTip {
+    margin-top:10px;
+    horizontal-align:center;
+    font-size:20px;
+}
+
+.CourierAbilityContainer {
+    margin-top:5px;
+    width: 128px;
+    height: 128px;
+    horizontal-align:center;
+    background-color:#202931aa;
+    border:1px solid #444444;
+    padding:11px;
+}
+
+.CourierAbility {
+    width:128px;
+    height: 128px;
+}
+
+.CourierAbilityDescription{
+    margin-top:15px;
+    width: 320px;
+    horizontal-align:center;
+    padding-bottom: 20px;
+}
+
+.PurchaseButtonPanel {
+    vertical-align:bottom;
+    horizontal-align: center;
+    flow-children:down;
+    margin-bottom:80px;
+    width: 300px;
+}
+
+
+.PurchaseButton {
+    background-color:gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
+    flow-children:right;
+
+    border-top: 1px solid #ffffff22;
+    border-left:1px solid #ffffff11;
+    border-bottom:1px solid #00000088;
+    border-right:1px solid #00000044;
+
+    horizontal-align:center;
+
+    width: 100%;
+    height:32px;
+    margin-top: 10px;
+}
+
+.PurchaseButtonContext {
+    vertical-align: center;
+    horizontal-align:center;
+    flow-children:right;
+}
+
+.PurchaseButtonContext Label{
+    font-size: 22px;
+    margin-left:15px;
+    vertical-align: center;
+    color:white;
+}
+
+.PurchaseImage {
+    width: 22px;
+    height: 22px;
+    background-image: url("s2r://panorama/images/icon_treasure_button_png.vtex");
+    background-size:100%;
+    vertical-align: center;
+}
+
+.OwnedLabel {
+    text-align: center;
+    width:100%;
+    height:74px;
+    font-size: 60px;
+    font-family:Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+    color:white;
+    background-color:#44444444;
+    border:1px solid darkslategray;
+}
+
+.Hidden {
+    visibility:collapse;
+}
+
+.CourierPageArrow {
+    background-color: transparent;
+    width:90px;
+    height:90px;
+
+    transition-property: transform, opacity;
+    transition-duration:0.3s;
+    transition-timing-function:ease-in-out;
+}
+
+/*.ParticleSelection .CourierPageArrow.Left {*/
+    /*transform: translatey(300px);*/
+    /*opacity:0;*/
+/*}*/
+
+/*.ParticleSelection .CourierPageArrow.Right {*/
+    /*transform: translatey(300px);*/
+    /*opacity:0;*/
+/*}*/
+
+.CourierNamePredict {
+    vertical-align:center;
+    margin-bottom: 150px;
+    color:white;
+    text-shadow:0px 1px 12px 3.0 #68E7E211;
+
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+/*.ParticleSelection .CourierNamePredict{*/
+    /*opacity:0;*/
+    /*transform: translatey(300px);*/
+/*}*/
+
+#prev_courier_label{
+    horizontal-align:left;
+    margin-left: 10px;
+}
+
+#next_courier_label{
+    horizontal-align:right;
+    margin-right: 10px;
+}
+
+.CloseButton {
+    horizontal-align: right;
+    background-color:#133843;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+    wash-color:#25907F;
+    background-image:url("s2r://panorama/images/control_icons/x_close_png.vtex");
+}
+
+.CourierButton {
+    width: 200px;
+    height:200px;
+    vertical-align: bottom;
+    horizontal-align:right;
+
+    transition-property:brightness, margin-bottom;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.CourierButton:hover{
+    brightness:4;
+    margin-bottom:3px;
+}
+
+.CourierButtonModel {
+    width: 100%;
+    height: 100%;
+}
+
+.CourierButtonFX {
+    width:200px;
+    height:200px;
+    vertical-align:bottom;
+    horizontal-align: right;
+    hue-rotation:230deg;
+    brightness:5;
+    contrast:1.2;
+    saturation:1;
+    wash-color:#f008;
+    opacity-mask:url("s2r://panorama/images/masks/softedge_circle_png.vtex");
+}
+
+.TopBar{
+    width:100%;
+    height:112px;
+    opacity-mask:url("file://{resources}/images/ui/courier_selection/topbar_mask.psd");
+}
+
+.TopBarBackground{
+    background-image:url("s2r://panorama/images/topbar/topbar_home_small_png.vtex");
+    background-size:100% 164px;
+    margin-left:-20%;
+    width:120%;
+    height:100%;
+}
+
+.TopBarButtons {
+    margin-left:80px;
+}
+
+.TopBarButtons RadioButton {
+    background-color: none;
+    flow-children:right;
+    color:white;
+    transition-property: text-shadow, color, brightness, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+    white-space:nowrap;
+    height: 60px;
+    width: 180px;
+    margin-top:20px;
+}
+
+.TopBarButtons .RadioBox {
+    visibility:collapse;
+}
+
+.TopBarButtons Label {
+    font-size: 28px;
+    font-family:Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+    text-align:center;
+    horizontal-align:center;
+}
+
+
+
+/*
+
+粒子特效的面板们
+
+*/
+
+.ParticlesSelectionPanel {
+    vertical-align: center;
+    horizontal-align:right;
+    margin-right: 300px;
+    transform: translatex(400px);
+    opacity:0;
+
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+
+.ParticleSelection .ParticlesSelectionPanel {
+    transform: translatex(0px);
+    opacity: 1;
+}
+
+.ParticleButtons {
+    flow-children:down;
+}
+
+.ParticleButtons .RadioBox {
+    visibility: collapse;
+}
+
+.ParticlePanel {
+    width: 400px;
+    height: 130px;
+    border-bottom: 2px solid darkolivegreen;
+
+    transition-property: brightness;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+
+.ParticlePanel:hover{
+    brightness:2;
+}
+
+.ParticleDisplayPanel {
+    width: 100%;
+    height: 100%;
+    opacity-mask:url("file://{resources}/images/ui/courier_selection/particle_mask.psd");
+}
+
+.ParticlePanel Label {
+    color: white;
+    font-size: 30px;
+    vertical-align: bottom;
+    horizontal-align: right;
+    margin-right: 10px;
+    margin-bottom:10px;
+    text-shadow:0px 2px 12px 4.0 #000000;
+}

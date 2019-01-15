@@ -1,0 +1,47 @@
+"DOTAAbilities"
+{
+	"jugg_call_of_dragon"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+
+		"AbilityCastPoint"				"1.0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"AbilityCooldown"				"5"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/creatures/boss_jugg/jugg_call_of_dragon.lua"
+				"Function"		"OnCallOfDragonOut"
+				"Target"		"POINT"
+			}
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/creatures/boss_jugg/jugg_call_of_dragon.lua"
+				"Function"		"OnCallOfDragonPrecast"
+				"Target"		"CASTER"
+			}
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_radius"			"128"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_amount"		"0.5"
+			}
+		}
+	}
+}

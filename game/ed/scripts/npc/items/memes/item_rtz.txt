@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+    "item_rtz"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/memes/item_rtz.lua"
+        "AbilityTextureName"            "memes/item_rtz"
+
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityCastPoint"              "0.0"
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                        "1"
+        "ItemPurchasable"               "0"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemStackable"                 "0"
+        "ItemShareability"              "ITEM_FULLY_SHAREABLE"
+        "ItemPermanent"                 "1"
+        "ItemKillable"                  "0"
+        "ItemCastOnPickup"              "0"
+
+        "pc"                "particles/items/memes/rtz/2ez.vpcf"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"          "FIELD_INTEGER"
+                "attack_damage_reduce"          "20"
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+#base items/dota_items_override.txt
+#base items/remove_dota_recipes.txt
+#base hero_abilities/dota_passive_abilities_override.txt
+
+#base creature_abilities/boss_bristleback/earthshaker_fissure.txt // 用来覆盖刚被牛的技能
+#base creature_abilities/boss_bristleback/earthshaker_enchant_totem.txt // 用来覆盖刚被牛的技能
+#base creature_abilities/boss_bristleback/bristleback_quill_spray.txt // 刚被的刚毛扫射
+
+#base creature_abilities/boss_yyf/yyf_abilities_override.txt // YYF的各种技能覆盖

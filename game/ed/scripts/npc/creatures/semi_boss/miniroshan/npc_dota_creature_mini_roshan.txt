@@ -1,0 +1,105 @@
+"DOTAUnits"{
+//=================================================================================
+// Creature: Mini Roshan
+//=================================================================================
+"npc_dota_creature_mini_roshan"
+{
+	// General
+	//
+	"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+	"Model"						"models/creeps/roshan/roshan.vmdl"	// Model.
+	"SoundSet"					"Roshan"					// Name of sound set.
+	"ModelScale"				".85"
+	"Level"						"1"
+	"ConsideredHero"			"1"
+	
+	// Abilities
+	//----------------------------------------------------------------
+	"Ability1"					"creature_fire_breath"	// Ability 1.
+	"Ability2"					""			// Ability 2.
+	"Ability3"					""			// Ability 3.
+	"Ability4"					""			// Ability 4.
+	"Ability5"					""			// Ability 5.
+	"Ability6"					""			// Ability 6 - Extra.
+	"Ability7"					""			// Ability 7 - Extra.
+	"Ability8"					""			// Ability 8 - Extra.
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"0"			// Physical protection.
+	"MagicalResistance"			"20"		// Magical protection (percentage).
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"200"		// Damage range min.
+	"AttackDamageMax"			"300"		// Damage range max.
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+	"AttackRate"				"1"			// Speed of attack.
+	"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+	"AttackRange"				"128"		// Range within a target can be attacked.
+	"ProjectileModel"			"particles/base_attacks/ranged_goodguy.vpcf" // Particle system model for projectile.
+	"ProjectileSpeed"			"1000"		// Speed of projectile.
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"0"		// Experience earn.
+	"BountyGoldMin"				"1"		// Gold earned min.
+	"BountyGoldMax"				"1"		// Gold earned max.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+	"RingRadius"				"60"
+	"HealthBarOffset"			"200"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+	"MovementSpeed"				"270"		// Speed
+	"MovementTurnRate"			"1.0"		// Turning rate.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"20000"		// Base health.
+	"StatusHealthRegen"			"20"		// Health regeneration rate.
+	"StatusMana"				"250"		// Base mana.
+	"StatusManaRegen"			"5"			// Mana regeneration rate.
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"CanRespawn"				"0"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+
+		"DefaultState"				"Invade"
+
+		"OffensiveAbilities"
+		{
+			"Ability1"				
+			{
+				"Name"				"creature_fire_breath"
+				"AOE"				"1"
+				"Radius"			"650"
+				"MinimumTargets"	"1"
+			}
+		}
+	}
+}	
+}

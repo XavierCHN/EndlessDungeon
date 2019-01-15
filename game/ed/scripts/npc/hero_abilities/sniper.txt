@@ -1,0 +1,140 @@
+"DOTAAbilities"
+{
+	"sniper_shotgun"
+	{
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"characters/sniper/shotgun"
+		"ScriptFile"					"abilities/characters/sniper/sniper_shotgun.lua"
+		"MaxLevel" 						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_reduce"			"70"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"min_projectile_bonus"		"1"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_projectile_bonus"		"5"
+			}
+		}
+	}
+
+	"sniper_headshot_ed"
+	{
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"characters/sniper/headshot_ed"
+		"ScriptFile"					"abilities/characters/sniper/sniper_headshot_ed.lua"
+		"MaxLevel" 						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"20"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_bonus"		"300"
+			}
+		}
+
+	}
+
+	
+
+	"sniper_take_aim_ed"
+	{
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"characters/sniper/take_aim_ed"
+		"ScriptFile"					"abilities/characters/sniper/sniper_take_aim_ed.lua"
+		"MaxLevel" 						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_bonus"			"15"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"		"2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_stacks"			"10"
+			}
+		}
+	}
+
+	"sniper_rocket_bomb"
+	{
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"characters/sniper/rocket_bomb"
+		"ScriptFile"					"abilities/characters/sniper/sniper_rocket_bomb.lua"
+		"MaxLevel" 						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		
+		"precache"						"particles/characters/sniper/sniper_rocket_bomb.vpcf"	
+		"precache1"						"particles/characters/sniper/sniper_rocket_bomb_explosion.vpcf"
+		"precache2"						"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed"			"1200"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_charges"		"5"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"charge_interval"		"10"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"knockback_distance"	"100"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"knockback_speed"	"1200"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"explosion_radius"	"320"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_percentage"	"300"
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/props_editor.js" />
+    </scripts>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/props_editor.css" />
+    </styles>
+    <Panel class="PropsEditorRoot Hidden" hittest="false">
+        <Button id="props_editor_button" onactivate="ShowPropsEditorPanel()">
+            <Label text="Props Editor" />
+        </Button>
+
+        <Label text="0,0" id="current_coord" />
+
+        <TextEntry id="current_prop" placeholder="Remove..." oninputsubmit="UpdatePropName()" />
+
+        <Panel id="props_editor_panel">
+            <Panel id="props_templates" />
+            <TextEntry id="props_file_name" maxchars="20" placeholder="Props File Name" />
+            <Button id="load_button" class="ButtonBevel" onactivate="LoadProps()" >
+                <Label text="Load" />
+            </Button>
+            <Button id="save_button" class="ButtonBevel" onactivate="SaveProps()" >
+                <Label text="Save" />
+            </Button>
+            <Button id="clear_button" class="ButtonBevel" onactivate="ClearProps()" >
+                <Label text="Clear" />
+            </Button>
+            <Button id="remove_button" class="ButtonBevel" onactivate="Remove()" >
+                <Label text="Remove" />
+            </Button>
+            <Button id="invalid_button" class="ButtonBevel" onactivate="Disable()" >
+                <Label text="Disable" />
+            </Button>
+            <Panel id="doors">
+                <ToggleButton checked="true" id="DoorU" text="U" />
+                <ToggleButton checked="true" id="DoorD" text="D" />
+                <ToggleButton checked="true" id="DoorL" text="L" />
+                <ToggleButton checked="true" id="DoorR" text="R" />
+            </Panel>
+            <ToggleButton checked="true" id="DontCareAbountDoor" text="Don't worry about door" />
+            <ToggleButton checked="true" id="Specific" text="Specific" />
+        </Panel>
+        <Panel id="props_grid" />
+    </Panel>
+</root>

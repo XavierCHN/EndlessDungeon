@@ -1,0 +1,50 @@
+"DOTAAbilities"
+{
+	"eidolon_splitter_eidolon"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass" 					"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"precache"				"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
+
+		"OnOwnerDied"
+		{
+			"FireEffect"
+			{
+				"Target"
+				{
+					"Center" 	"CASTER"
+					"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+				}
+				"EffectName"			"particles/units/heroes/hero_enigma/enigma_demonic_conversion.vpcf"
+				"EffectAttachType"		"follow_origin"
+			}
+
+			"FireSound"
+			{
+				"EffectName"			"Hero_Enigma.Demonic_Conversion"
+				"Target"
+				{
+					"Center" 	"CASTER"
+					"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+				}
+			}
+
+            "RunScript"
+            {
+                "ScriptFile"    "utils/creatures.lua"
+                "Function"      "CreateEnemyKV"
+                "UnitName"      "npc_dota_eidolon_ed"
+                "UnitCount"     "2"
+                "SpawnRadius"   "50"
+                "Target"
+                {
+                    "Center" 	"CASTER"
+                    "Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+                }
+            }
+		}
+	}
+}

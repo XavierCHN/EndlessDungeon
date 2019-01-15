@@ -1,0 +1,15 @@
+"DOTAAbiltiies"
+{
+    "bearzky_snow_ball"
+    {
+        "BaseClass"     "ability_lua"
+        "ScriptFile"    "abilities/couriers/bearzky_snow_ball.lua"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName" "couriers/bearzky_snow_ball"
+        "MaxLevel"      "1"
+
+        "precache"		"particles/creatures/bearzky/bearzky_snow_ball.vpcf"
+        "p1"			"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
+        "p2"			"soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts"
+    }
+}

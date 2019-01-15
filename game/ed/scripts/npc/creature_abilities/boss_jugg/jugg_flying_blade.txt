@@ -1,0 +1,45 @@
+"DOTAAbilities"
+{
+	"jugg_flying_blade"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"AbilityCastPoint"				"0"
+
+		"AbilityCooldown"				"30"
+
+		"OnSpellStart"
+		{
+			"SpawnUnit"
+			{
+				"UnitName"		"npc_dota_creature_jugg_flying_blade"
+				"Target" 		"CASTER"
+				"Duration"		"%duration"
+				"UnitCount"		"5"
+				"UnitLimit"		"0"
+				"GrantsGold"	"0"
+				"GrantsXP"		"0"
+				"SpawnRadius"	"20"
+				"OnSpawn"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/jugg/jugg_flying_blade.lua"
+						"Function"		"OnFlyingBladeSummoned"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"10"
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+"DOTAAbiltiies"
+{
+    "drodo_fish_attack"
+    {
+        "BaseClass"     "ability_lua"
+        "ScriptFile"    "abilities/couriers/drodo_fish_attack.lua"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName" "couriers/drodo_fish_attack"
+        "MaxLevel"      "1"
+        "p1"			"particles/couriers/drodo/drodo_fish_attack.vpcf"
+    }
+}

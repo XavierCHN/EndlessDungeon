@@ -1,0 +1,101 @@
+"DOTAUnits"
+{
+"npc_dota_creature_brewmaster_earth"
+{
+	// General
+	//
+	"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+	"Model"						"models/heroes/brewmaster/brewmaster_earthspirit.vmdl"	// Model.
+	"IdleExpression"			"scenes/brewmaster/brewmaster_spirits_exp_idle_01.vcd"		// custom facial animation idle
+	"SoundSet"					"Brewmaster_Earth"			// Name of sound set.
+	"Level"						"7"
+	"ModelScale"				"0.85"
+	"IsSummoned"				"0"
+	"IsAncient"					"1"
+	"ConsideredHero"			"1"
+	"IgnoreAddSummonedToSelection" "1"
+	"UnitLabel"					"brewmaster_earth"
+
+	// Abilities
+	//----------------------------------------------------------------
+	"Ability1"					"brewmaster_earth_hurl_boulder"		// Ability 1
+	"Ability2"					"brewmaster_earth_spell_immunity"	// Ability 2
+	"Ability3"					"brewmaster_earth_pulverize"		// Ability 3
+	"Ability4"					"brewmaster_thunder_clap"		// Ability 4	
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"5"			// Physical protection.
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"100"		// Damage range min.
+	"AttackDamageMax"			"100"		// Damage range max.	
+	"AttackRate"				"1.25"		// Speed of attack.
+	"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"600"		// Range within a target can be acquired.
+	"AttackRange"				"150"		// Range within a target can be attacked.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"HealthBarOffset"			"160"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+	"MovementSpeed"				"325"		// Speed.
+
+	"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"0"		// Experience earn.
+	"BountyGoldMin"				"1"		// Gold earned min.
+	"BountyGoldMax"				"1"		// Gold earned max.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"70"
+	"HealthBarOffset"			"300"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"	
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+	"MovementSpeed"				"300"		// Speed
+	"MovementTurnRate"			"0.7"		// Turning rate.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"2000"		// Base health.
+	"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+	"StatusMana"				"1500"		// Base mana.
+	"StatusManaRegen"			"10.0"		// Mana regeneration rate.
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"2000"		// Range of vision during day light.
+	"VisionNighttimeRange"		"2000"		// Range of vision at night time.
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"CanRespawn"				"0"
+	
+		"EquippedItems"
+		{
+			"ForceStaff"
+			{
+				"Item"					"item_ultimate_scepter"
+			}
+		}
+
+		"DisableResistance"			"100.0"
+
+
+		"DefaultState"				"Invade"
+	}
+}
+}

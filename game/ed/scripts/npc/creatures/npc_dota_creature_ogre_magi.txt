@@ -1,0 +1,121 @@
+"DOTAUnits"{
+//=================================================================================
+// Creature: Ogre Magi
+//=================================================================================
+"npc_dota_creature_ogre_magi"
+{
+	// General
+	//----------------------------------------------------------------
+	"Model"						"models/heroes/ogre_magi/ogre_magi.vmdl"	// Model.
+	"BaseClass"					"npc_dota_creature"
+	"SoundSet"					"n_creep_Melee"
+	"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+	"Level"						"1"
+	"ModelScale" 				".75"
+
+	// Abilities
+	//----------------------------------------------------------------
+	"Ability1"					"custom_ogre_magi_bloodlust"	// Ability 1
+	"Ability2"					""								// Ability 2
+	"Ability3"					""								// Ability 3
+	"Ability4"					""								// Ability 4
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"0"			// Physical protection.
+	"MagicalResistance"			"20"		// Magical protection.
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"20"		// Damage range min.
+	"AttackDamageMax"			"20"		// Damage range max.	
+	"AttackRate"				"1.35"		// Speed of attack.
+	"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"500"		// Range within a target can be acquired.
+	"AttackRange"				"100"		// Range within a target can be attacked.
+	"ProjectileModel"			""			// Particle system model for projectile.
+	"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"60"
+	"HealthBarOffset"			"210"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"62"		// Experience earn.
+	"BountyGoldMin"				"43"		// Gold earned min.
+	"BountyGoldMax"				"61"		// Gold earned max.
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"				"400"		// Speed.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"30"		// Base health.
+	"StatusHealthRegen"			"1.0"		// Health regeneration rate.
+	"StatusMana"				"450"		// Base mana.
+	"StatusManaRegen"			"6.0"		// Mana regeneration rate.		 
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"800"		// Range of vision during day light.
+	"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+	"VoiceFile"					"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+	
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		//Basic AI State
+		//-----------------------------------------------------------------
+		"DefaultState"			"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"			"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"		"0.0"
+				"Support"		"65.0"
+			}
+		}
+		
+		//Level Up Parameters
+		//-----------------------------------------------------------------
+		"HPGain"					"20"
+		"DamageGain"				"10"
+		"ArmorGain"					"0"
+		"MagicResistGain"			"0"
+		"MoveSpeedGain"				"10"
+		"BountyGain"				"0"
+		"XPGain"					"0"
+
+		"DefensiveAbilities"
+		{
+			"Ability1"
+			{
+				"Name"				"custom_ogre_magi_bloodlust"
+				"Buff"				"1"
+			}
+		}
+		
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "105" }
+		}
+	}
+}
+}

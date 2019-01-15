@@ -1,0 +1,28 @@
+"DOTAAbilities"
+{
+	"ursa_earthshock"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5357"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.7"
+		"AbilityCooldown"				"5"
+		"AbilityDuration"				"4.0 4.0 4.0 4.0"
+		"AbilityDamage"					"20 30 40 50"
+		"AbilityManaCost"				"75 75 75 75"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"shock_radius"				"385"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_slow"				"-35"
+			}
+		}
+	}	
+}

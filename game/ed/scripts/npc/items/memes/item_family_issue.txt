@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+	"item_family_issue"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"memes/item_family_issue"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemKillable"					"0"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"0"
+        "ItemInitialCharges"            "3"
+
+        "OnSpellStart"
+        {
+        	"SpendCharge" {}
+            "RunScript"
+            {
+                "ScriptFile"    "items/memes/item_family_issue"
+                "Function"       "OnCastFamilyIssue"
+            }
+        }
+	}
+}

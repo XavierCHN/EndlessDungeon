@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_forest_troll_berserker_ed"
+	{
+		//"ProjectileModel"		"particles/base_attacks/ranged_badguy_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_berserker.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"2"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"28"
+		"AttackDamageMax"		"37"
+		"AttackRate"		"1.6000000238419"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"500"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"41"
+		"BountyGoldMin"		"22"
+		"BountyGoldMax"		"26"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"160"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"270"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"500"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

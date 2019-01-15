@@ -1,0 +1,121 @@
+//=================================================================================
+// Creature: Minor Lich
+//=================================================================================
+"npc_dota_creature_lich"
+{
+	// General
+	//
+	"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+	"Model"						"models/heroes/lich/lich.vmdl"	// Model.
+	"ModelScale"				"1.5"
+	"Level"						"1"
+	"ConsideredHero"			"1"
+	
+	// Abilities
+	//----------------------------------------------------------------
+	
+	"Ability1"					"creature_lich_nova"		// Ability 1.
+	"Ability2"					"creature_lich_freeze_field"			// Ability 2.
+	"Ability3"					""			// Ability 3.
+	"Ability4"					""			// Ability 4.
+	"Ability5"					""			// Ability 5.
+	"Ability6"					""			// Ability 6 - Extra.
+	"Ability7"					""			// Ability 7 - Extra.
+	"Ability8"					""			// Ability 8 - Extra.
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"8"			// Physical protection.
+	"MagicalResistance"			"35"		// Magical protection.
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+	"AttackDamageMin"			"300"								// Damage range min.
+	"AttackDamageMax"			"450"								// Damage range max.
+	"AttackRate"				"1.6"								// Speed of attack.
+	"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"800"								// Range within a target can be acquired.
+	"AttackRange"				"600"								// Range within a target can be attacked.
+	"ProjectileModel"			"particles/units/heroes/hero_lich/lich_base_attack.vpcf"					// Particle system model for projectile.
+	"ProjectileSpeed"			"800"								// Speed of projectile.
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"0"		// Experience earn.
+	"BountyGoldMin"				"1"		// Gold earned min.
+	"BountyGoldMax"				"1"		// Gold earned max.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"70"
+	"HealthBarOffset"			"200"
+	"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+	"MovementSpeed"				"265"		// Speed
+	"MovementTurnRate"			"0.5"		// Turning rate.
+	
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
+	"VoiceFile"					"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"100"			// Base health.
+	"StatusHealthRegen"			"5.0"			// Health regeneration rate.
+	"StatusMana"				"1000"			// Base mana.
+	"StatusManaRegen"			"2.0"			// Mana regeneration rate.
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"CanRespawn"				"0"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"30.0"
+				"Support"			"0.0"
+				"RoamDistance"		"700.0"
+			}
+		}
+
+		"DefaultState"				"Invade"
+		
+		"OffensiveAbilities"
+		{
+			"Ability1"				
+			{
+				"Name"				"creature_minor_chain_frost"
+				"AOE"				"1"
+				"Radius"			"575"
+				"MinimumTargets"	"2"
+			}
+		}
+		
+		"AttachWearables"
+		{
+			"Wearable1"	{ "ItemDef" "331" }
+			"Wearable2"	{ "ItemDef"	"332" }
+			"Wearable3" { "ItemDef"	"333" }
+			"Wearable4" { "ItemDef"	"334" }
+		}
+	}
+}

@@ -1,0 +1,38 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/localization_editor.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/localization_editor.js" />
+    </scripts>
+    <snippets>
+        <snippet name="LocalizationLine">
+            <Panel class="LocalizationLine_Root LeftRightFlow">
+                <TextEntry id="token" maxchars="400" placeholder="token" />
+                <TextEntry id="token_english" class="TokensTextEntry" maxchars="400" placeholder="english" />
+                <TextEntry id="token_schinese" class="TokensTextEntry" maxchars="400" placeholder="schinese" />
+            </Panel>
+        </snippet>
+    </snippets>
+    <Panel class="Localizaiton_Root Hidden" hittest="false">
+        <Button class="ButtonBevel" id="panorama_button" onactivate="TogglePanoramaPanel()">
+            <Label text="Panorama Tokens Editor" />
+        </Button>
+        <Panel class="PanoramaContent LocalizationContent Hidden" id="panorama_panel">
+            <Panel class="LocalizationControlButtons">
+                <Button id="add_token" class="ButtonBevel" onactivate="AddPanoramaToken()">
+                    <Label text="Add Token" />
+                </Button>
+                <Button id="save_token" class="ButtonBevel" onactivate="SavePanoramaToken()">
+                    <Label text="Save" />
+                </Button>
+                <Button id="reload_button" class="ButtonBevel" onactivate="Reload()">
+                    <Label text="Reload" />
+                </Button>
+            </Panel>
+            <Panel id="panorama_content_panel" class="TokensHolder" />
+        </Panel>
+    </Panel>
+</root>

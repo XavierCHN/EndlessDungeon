@@ -1,0 +1,85 @@
+"AddonInfo"
+{
+	"TeamCount"		"1"
+	"maps"			"cota_pve"
+	"endlessdungeon"
+	{
+		"MaxPlayers"		"5"
+	}
+
+	"Default_Keys"
+    {
+        "01"
+        {
+            "Key"       "D"
+            "Command"   "+PlayerMoveRight"
+            "Name"      "PlayerMoveRight"
+        }
+        "02"
+        {
+            "Key"       "W"
+            "Command"   "+PlayerMoveUp"
+            "Name"      "PlayerMoveUp"
+        }
+        "03"
+        {
+            "Key"       "S"
+            "Command"   "+PlayerMoveDown"
+            "Name"      "PlayerMoveDown"
+        }
+        "04"
+        {
+            "Key"       "A"
+            "Command"   "+PlayerMoveLeft"
+            "Name"      "PlayerMoveLeft"
+        }
+        "05"
+        {
+            "Key"       "SHIFT"
+            "Command"   "+PlayerDash"
+            "Name"      "PlayerDash"
+        }
+        "06"
+        {
+            "Key"       "1"
+            "Command"   "+PlayerExecute1"
+            "Name"      "PlayerExecute1"
+        }
+        "07"
+        {
+            "Key"       "2"
+            "Command"   "+PlayerExecute2"
+            "Name"      "PlayerExecute2"
+        }
+        "08"
+        {
+            "Key"       "Z"
+            "Command"   "+PlayerPickUp"
+            "Name"      "PlayerPickUp"
+        }
+        // "9"
+        // {
+        //     "Key"       "UPARROW"
+        //     "Command"   "+PlayerShootUp"
+        //     "Name"      "PlayerShootUp"
+        // }
+        // "10"
+        // {
+        //     "Key"       "LEFTARROW"
+        //     "Command"   "+PlayerShootLeft"
+        //     "Name"      "PlayerShootLeft"
+        // }
+        // "11"
+        // {
+        //     "Key"       "RIGHTARROW"
+        //     "Command"   "+PlayerShootRight"
+        //     "Name"      "PlayerShootRight"
+        // }
+        // "12"
+        // {
+        //     "Key"       "DOWNARROW"
+        //     "Command"   "+PlayerShootDown"
+        //     "Name"      "PlayerShootDown"
+        // }
+    }
+}

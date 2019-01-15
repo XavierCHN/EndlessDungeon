@@ -1,0 +1,23 @@
+"DOTAAbilities"
+{
+	"creature_nevermore_green"
+	{
+		"BaseClass"             		"ability_datadriven"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"Modifiers"
+		{
+			"modifier_nevermore_green"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+				"IsPurgable"		"0"
+
+				"EffectName"		"particles/creatures/boss_pis/head_green_fire.vpcf"
+				"EffectAttachType"	"follow_overhead"
+			}
+		}
+	}
+}

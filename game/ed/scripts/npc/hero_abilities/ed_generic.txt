@@ -1,0 +1,119 @@
+"DOTAAbilities"
+{
+	"ed_empty_1"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_2"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_3"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_4"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_5"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_q"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_e"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_r"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_left"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_right"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_w_none"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"courier_transfer_items"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_empty_f"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_courier_passive"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"courier_shield"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"ed_dash"
+	{
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"characters/sniper/rocket_dash"
+		"ScriptFile"					"abilities/characters/ed_dash.lua"
+		"MaxLevel" 						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"precache"						"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"0.3"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed"		"1000"
+			}
+		}
+	}
+}

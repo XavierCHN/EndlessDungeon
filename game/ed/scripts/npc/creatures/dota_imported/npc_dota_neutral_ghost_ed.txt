@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_ghost_ed"
+	{
+		//"ProjectileModel"		"particles/neutral_fx/ghost_base_attack_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"3"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"ghost_frost_attack"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"45"
+		"AttackDamageMax"		"50"
+		"AttackRate"		"1"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"400"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"62"
+		"BountyGoldMin"		"30"
+		"BountyGoldMax"		"40"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"190"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"320"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"500"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"400"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

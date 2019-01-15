@@ -1,0 +1,135 @@
+#base props/abilities.txt
+
+#base hero_abilities/ed_generic.txt
+#base hero_abilities/room_abilities/huskar_shadow_raze.txt
+
+#base courier_abilities/bearzky.txt
+
+#base creature_abilities/creature_generic.txt
+#base creature_abilities/creature_attack.txt
+#base creature_abilities/creature_self_haste.txt
+#base creature_abilities/fire_archer.txt
+#base creature_abilities/golem_splitter.txt
+#base creature_abilities/creature_acid_spray.txt
+#base creature_abilities/creature_summon_undead.txt
+#base creature_abilities/lesser_nightcrawler_pounce.txt
+
+#base creature_abilities/creature_melee_smash.txt
+#base creature_abilities/creature_satyr_hellcaster.txt
+
+#base creature_abilities/boss_pudge/creature_pudge_meat_hook.txt
+#base creature_abilities/boss_pudge/creature_dismember.txt
+#base creature_abilities/boss_pudge/creature_minipudge_rot.txt
+#base creature_abilities/boss_pudge/creature_pudge_charge.txt
+#base creature_abilities/boss_pudge/creature_pudge_jump.txt
+
+#base creature_abilities/boss_broodking/creature_spawn_broodmother_eggs.txt
+#base creature_abilities/boss_broodking/creature_hatch_broodmother.txt
+#base creature_abilities/boss_broodking/creature_spawn_spider.txt
+#base creature_abilities/boss_broodking/creature_spin_web.txt
+#base creature_abilities/boss_broodking/broodking_shoot.txt
+
+#base creature_abilities/boss_techies/techies_plant_bomb.txt
+#base creature_abilities/boss_techies/creature_techies_suicide.txt
+
+#base creature_abilities/boss_huskar/creature_huskar_burning_spear.txt
+#base creature_abilities/boss_huskar/creature_huskar_inner_vatility.txt
+#base creature_abilities/boss_huskar/creature_huskar_poison_milk.txt
+#base creature_abilities/boss_huskar/creature_huskar_invulnerable.txt
+
+#base creature_abilities/boss_nevermore/creature_nevermore_green.txt
+#base creature_abilities/boss_nevermore/creature_nevermore_requiem.txt
+
+#base creature_abilities/boss_jugg/jugg_call_of_dragon.txt
+#base creature_abilities/boss_jugg/jugg_flying_blade.txt
+#base creature_abilities/boss_jugg/jugg_linear_blade.txt
+#base creature_abilities/boss_jugg/jugg_linear_blade_passive.txt
+
+#base creature_abilities/boss_bristleback/bristleback_goo.txt
+
+// ====================================================================================
+// DOTA IMPORTED ABILITIES
+// ====================================================================================
+#base creature_abilities/dota_imported/eidolon_splitter_eidolon.txt
+#base creature_abilities/dota_imported/eidolon_splitter_lesser_eidolon.txt
+
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"bullet_attack"
+	{
+		"BaseClass"	"ability_lua"
+		"AbilityTextureName"	"necronomicon_warrior_mana_burn"
+		"ScriptFile"	"abilities/characters/bullet_attack"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"MaxLevel"		"1"
+		"AbilityDamage"	"DAMAGE_TYPE_PURE"
+	}
+
+	"bonus_chicken_drop_gold"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_lua"
+		"AbilityTextureName"	"alchemist_goblins_greed"
+		"ScriptFile"	"abilities/creatures/bonus_chicken_drop_gold"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"total_gold"	"10000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"time_limit"	"60.0"
+			}
+		}
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+	}
+
+	"for_debug"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"precache"
+		{
+			"soundfile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"lich_lich_ability_nova_01"
+			}
+		}
+	}
+
+	"dummy_unit_passive"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_dummy_unit"
+			{
+				"Passive"				"1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"			"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"			"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NOT_ON_MINIMAP"			"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+}

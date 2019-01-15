@@ -1,0 +1,84 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_sniper"
+	{
+		"override_hero"		"npc_dota_hero_sniper"
+		
+		// ABILITY
+		"Ability1"			"ed_empty_q"
+		"Ability2"			"ed_empty_w_none" // 这个按钮不被替换，也不显示
+		"Ability3"			"ed_empty_e"
+		"Ability4"			"ed_empty_left"
+		"Ability5"			"ed_empty_f"
+		"Ability6"			"ed_empty_r"
+		"Ability7"			"ed_empty_1"
+		"Ability8"			"ed_empty_2"
+		"Ability9"			"ed_dash"
+		"Ability10"			"ed_empty_3"
+		"Ability11"			"ed_empty_4"
+		"Ability12"			"ed_empty_5"
+		"Ability13"			"ed_empty_right"
+		"Ability14"			""
+		"Ability15"			""
+		"Ability16"			""
+		"Ability17"			""
+		"Ability18"			""
+		"Ability19"			""
+		"Ability20"			""
+		"Ability21"			""
+		"Ability22"			""
+		"Ability23"			""
+		"Ability24"			""
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"		"35"
+		"AttackDamageMax"		"35"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"0.5"
+		// "AttackAnimationPoint"		"0.750000"
+		// "AttackAcquisitionRange"		"800"
+		"AttackRange"		"128" // 攻击距离设置为基础近战攻击距离，每一个技能需要额外设置攻击距离，和增加攻击距离的装备共同作用
+		// "ProjectileModel"		"particles/base_attacks/ranged_hero.vpcf"
+		// "ProjectileSpeed"		"900"
+
+		// Armor
+		// -------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"		"0"
+		"MagicalResistance"		"0"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		// "AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeAgilityGain"		"0"
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"		"100"
+		"StatusMana"		"100"
+		"StatusManaRegen"		"1"
+		"StatusStartingMana"	"-1"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"400"
+		"MovementTurnRate"		"1.0"
+		"HasAggressiveStance"		"0"
+
+		// Convert to couriers
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"				"models/props_gameplay/donkey.vmdl"
+		"DisableWearables"	"1"
+		"SoundSet"		"Hero_Wisp"
+		"IdleSoundLoop"		"Hero_Wisp.IdleLoop"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
+	}
+}

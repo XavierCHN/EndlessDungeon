@@ -1,0 +1,78 @@
+"DOTAAbilities"
+{
+	"barking_dog_fire_breath"
+	{
+		"BaseClass" "ability_lua"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"ScriptFile"		"abilities/props/barking_dog_fire_breath.lua"
+
+		"precache"			"particles/props/barking_dog_fire_breath.vpcf"
+		"precache1"			"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+
+		"AbilityCastPoint"	"0.5"
+	}
+
+	"hooded_fang_venomous_gale"
+	{
+		"BaseClass" "ability_lua"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"ScriptFile"		"abilities/props/hooded_fang_venomous_gale.lua"
+
+		"precache"			"particles/units/heroes/hero_venomancer/venomancer_venomous_gale.vpcf"
+		"precache1"			"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
+
+		"AbilityCastPoint"	"0.5"
+	}
+
+	"spike_trap_action"
+	{
+		"BaseClass" "ability_lua"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"ScriptFile"		"abilities/props/spike_trap_action.lua"
+
+		"precache1"			"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+	}
+	
+	"spikes_static"
+	{
+		"BaseClass" "ability_lua"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"ScriptFile"		"abilities/props/spikes_static.lua"
+
+		"precache1"			"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+	}
+
+	"rocks_random_model"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"ability_name"
+		"MaxLevel" 						"7"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"Modifiers"
+		{
+			"modifier_rocks_random_model"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/props/prop_rocks.lua"
+						"Function"		"SetRockRandomModel"
+					}
+				}
+			}
+		}
+	}
+
+}

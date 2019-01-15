@@ -1,0 +1,108 @@
+"DOTAAbilities"{
+//=================================================================================================================
+// Creature: Spin Web
+//=================================================================================================================
+"creature_spin_web"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "broodmother_spin_web"
+	
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"300"
+	"AbilityCastPoint"				"0"
+	"AbilityCooldown"				"8.0"
+	"AbilityManaCost"				"0"
+
+	"OnSpellStart"
+	{
+		"SpawnUnit"
+		{
+			"UnitName"			"npc_dota_broodmother_web"
+			"UnitCount"			"1"
+			"SpawnRadius"		"100"
+			"Target"			"CASTER"
+			"Duration"			"60"
+			"OnSpawn"
+			{
+				"ApplyModifier"
+				{
+					"ModifierName"	"modifier_creature_spin_web"
+					"Target"		"TARGET"
+				}
+			}
+		}
+		"FireSound"
+		{
+			"EffectName"		"Hero_Broodmother.SpinWebCast"
+			"Target"			"CASTER"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_creature_spin_web"
+		{
+
+			"OnCreated"
+			{
+				"AttachEffect" 
+				{
+					"EffectName"		"particles/units/heroes/hero_broodmother/broodmother_web.vpcf"
+					"EffectAttachType"	"follow_origin"
+					"Target"			"TARGET"
+					"ControlPoints"
+					{
+						"00" "0 0 0"
+						"01" "0 0 0"
+						"02" "%radius 1 1"
+					}
+				}
+			}
+
+			"States"
+			{
+				"MODIFIER_STATE_INVULNERABLE"		    "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_NO_HEALTH_BAR"		    "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_UNSELECTABLE"			"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_FLYING"					"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius"				"900"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"count"					"2 4 6 8"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"heath_regen"			"2 4 6 8"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movespeed"		"20 25 30 35"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"fade_delay"			"2.0 2.0 2.0 2.0"
+		}
+	}
+}
+}

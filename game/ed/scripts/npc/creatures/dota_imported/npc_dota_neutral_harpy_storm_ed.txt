@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_harpy_storm_ed"
+	{
+		//"ProjectileModel"		"particles/base_attacks/ranged_badguy_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_harpy_b/n_creep_harpy_b.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.92500001192093"
+		"Level"		"3"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"harpy_storm_chain_lightning"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"2"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"30"
+		"AttackDamageMax"		"37"
+		"AttackRate"		"1.6000000238419"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"450"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"62"
+		"BountyGoldMin"		"33"
+		"BountyGoldMax"		"37"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"190"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"310"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"550"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"400"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"1800"
+	}
+}

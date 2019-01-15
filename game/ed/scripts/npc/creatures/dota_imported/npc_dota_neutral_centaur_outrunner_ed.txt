@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_centaur_outrunner_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"0.80000001192093"
+		"Level"		"2"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"mudgolem_cloak_aura"
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"18"
+		"AttackDamageMax"		"21"
+		"AttackRate"		"1.2999999523163"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"100"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"41"
+		"BountyGoldMin"		"20"
+		"BountyGoldMax"		"24"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"170"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"350"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"350"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

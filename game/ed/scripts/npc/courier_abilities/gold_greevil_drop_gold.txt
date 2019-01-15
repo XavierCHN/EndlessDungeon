@@ -1,0 +1,29 @@
+"DOTAAbiltiies"
+{
+    "gold_greevil_drop_gold"
+    {
+        "BaseClass"     "ability_datadriven"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName" "couriers/gold_greevil_drop_gold"
+        "MaxLevel"      "1"
+
+        "Modifiers"
+        {
+            "modifier_gold_greevil_drop_gold"
+            {
+                "Passive"            "1"
+                "IsHidden"            "0"
+                "IsDebuff"            "0"
+
+                "OnCreated"
+                {
+                    "RunScript"
+                    {
+                        "ScriptFile"        "abilities/couriers/gold_greevil_drop_gold.lua"
+                        "Function"          "RegisterGoldGreevil"
+                    }
+                }
+            }
+        }
+    }
+}

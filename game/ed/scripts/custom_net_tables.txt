@@ -1,0 +1,22 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	custom_net_tables =
+	[
+		"map_data",// 地图的信息（大地图）
+		"props_data", // 所有的内容物
+		"couriers_data", // 信使的信息
+		"econ", // 和经济有关的信息
+		"localization_string", // 本地化文本
+		"panorama_string", // 本地化文本
+
+		// 与游戏进程相关的
+		"player_resource", // 玩家的所有资源
+		"game_state", // 当前的游戏状态
+
+		// 信使的属性
+		"courier_attributes",
+
+		// kv信息
+		"kv_data",
+	]
+}

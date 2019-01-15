@@ -1,0 +1,69 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_big_thunder_lizard_ed"
+	{
+		//"ProjectileModel"		"particles/neutral_fx/thunderlizard_base_attack_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_big.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.80000001192093"
+		"Level"		"6"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"big_thunder_lizard_frenzy"
+		"Ability2"		"big_thunder_lizard_wardrums_aura"
+		"Ability3"		"big_thunder_lizard_slam"
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"2"
+		"MagicalResistance"		"70"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"60"
+		"AttackDamageMax"		"65"
+		"AttackRate"		"1.7999999523163"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"300"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"155"
+		"BountyGoldMin"		"89"
+		"BountyGoldMax"		"97"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"240"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"270"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"1400"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"400"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1400"
+		"VisionNighttimeRange"		"800"
+	}
+}

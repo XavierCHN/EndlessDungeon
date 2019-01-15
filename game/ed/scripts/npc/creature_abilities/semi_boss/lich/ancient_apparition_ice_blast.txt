@@ -1,0 +1,201 @@
+"DOTAAbilities"{
+//=================================================================================================================
+// Ancient Apparition: Ice Blast
+//=================================================================================================================
+"ancient_apparition_ice_blast"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"AbilityTextureName"			"ancient_apparition_ice_blast"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.4"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"15.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"0"
+	
+	"OnSpellStart"
+	{
+		"LinearProjectile"
+		{
+			"EffectName"			"particles/frostivus_gameplay/holdout_ancient_apparition_ice_blast_final.vpcf"
+			"MoveSpeed"				"%speed"
+			"StartPosition"			"attach_attack1"
+			"StartRadius"			"%collision_radius"
+			"EndRadius"				"%collision_radius"
+			"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_NONE"
+			"TargetTypes"			"DOTA_UNIT_TARGET_NONE"
+			"TargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
+			"HasFrontalCone"		"0"
+			"ProvidesVision"		"1"
+			"VisionRadius"			"300"
+		}
+		"FireSound"
+		{
+			"EffectName"			"Hero_Ancient_Apparition.IceBlastRelease.Cast"
+			"Target"				"CASTER"
+		}
+		"FireSound"
+		{
+			"EffectName"			"Hero_Ancient_Apparition.IceVortexCast"
+			"Target"				"POINT"
+		}
+		
+		"CreateThinker"
+		{
+			"ModifierName"			"ice_vortex_thinker"
+			"Target"				"POINT"
+		}
+	}
+
+	"OnProjectileFinish"
+	{
+		"FireEffect"
+		{
+			"EffectName"			"particles/units/heroes/hero_ancient_apparition/ancient_apparition_ice_blast_explode.vpcf"
+			"Target"				"POINT"
+		}
+		"FireSound"
+		{
+			"EffectName"			"Hero_Ancient_Apparition.IceBlast.Target"
+			"Target"				"POINT"
+		}
+		
+		"ActOnTargets"
+		{
+			"Target"
+			{
+				"Center"			"PROJECTILE"
+				"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+				"Radius"			"%explosion_radius"
+			}
+			"Action"
+			{
+				"Damage"
+				{
+					"Target"				"TARGET"
+					"Type"					"DAMAGE_TYPE_MAGICAL"
+					"Damage"				"%damage"
+				}
+				"ApplyModifier"
+				{
+					"Target"				"TARGET"
+					"ModifierName"			"ice_blast_slow"
+				}
+			}
+		}
+	}
+
+	"Modifiers"
+	{
+		"ice_vortex_slow"
+		{
+			"Duration"					"0.1"
+			"EffectName"				"particles/generic_gameplay/generic_slowed_cold.vpcf"
+			"StatusEffectName"			"status_effect_frost"
+			"StatusEffectPriority"		"41"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%vortex_slow_amount"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%vortex_slow_amount"
+			}
+		}
+
+		"ice_blast_slow"
+		{
+			"Duration"					"%slow_duration"
+			"EffectName"				"particles/units/heroes/hero_ancient_apparition/ancient_apparition_ice_blast_debuff.vpcf"
+			"StatusEffectName"			"status_effect_iceblast"
+			"StatusEffectPriority"		"61"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%slow_amount"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%slow_amount"
+				"MODIFIER_PROPERTY_DISABLE_HEALING" "1"
+			}
+		}
+
+		"ice_vortex_thinker"
+		{
+			"Aura"					"ice_vortex_slow"
+			"Aura_Radius"			"%explosion_radius"
+			"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+			"Duration"				"%vortex_duration"
+
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"EffectName"		"particles/units/heroes/hero_ancient_apparition/ancient_ice_vortex.vpcf"
+					"EffectAttachType"	"start_at_customorigin"
+					"Target"			"TARGET"
+					"ControlPoints"
+					{
+						"05" "%explosion_radius %explosion_radius %explosion_radius"
+					}
+				}
+			}
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"damage"				"400 600 800 1000 1500"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"explosion_radius"		"350"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"collision_radius"		"100"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"speed"					"1100"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"slow_duration"			"4.0"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"slow_amount"			"-40"
+		}
+		"07"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"vortex_slow_amount"	"-10"
+		}
+		"08"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"vortex_duration"		"8.0"
+		}
+	}
+}
+}

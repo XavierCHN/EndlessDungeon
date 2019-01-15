@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_satyr_hellcaller_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_satyr_a/n_creep_satyr_a.vmdl"
+		"SoundSet"		"n_creep_Melee"
+		"ModelScale"		"0.94999998807907"
+		"Level"		"6"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"satyr_hellcaller_shockwave"
+		"Ability2"		"satyr_hellcaller_unholy_aura"
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"0"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"49"
+		"AttackDamageMax"		"55"
+		"AttackRate"		"1.3500000238419"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"100"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"119"
+		"BountyGoldMin"		"77"
+		"BountyGoldMax"		"91"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"210"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"290"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"1100"
+		"StatusHealthRegen"		"1"
+		"StatusMana"		"400"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

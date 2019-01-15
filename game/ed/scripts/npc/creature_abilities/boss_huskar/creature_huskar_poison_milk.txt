@@ -1,0 +1,9 @@
+"DOTAAbilities"
+{
+	"creature_huskar_poison_milk"
+	{
+		"BaseClass"		"ability_lua"
+		"ScriptFile"	"abilities/creatures/boss_huskar/creature_huskar_poison_milk.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	}
+}

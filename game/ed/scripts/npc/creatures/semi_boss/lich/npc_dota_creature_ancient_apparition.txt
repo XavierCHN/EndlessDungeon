@@ -1,0 +1,77 @@
+"DOTAUnits"{
+//=================================================================================================================
+// Creature: Ancient Apparition
+//=================================================================================================================
+"npc_dota_creature_ancient_apparition"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"Model"						"models/heroes/ancient_apparition/ancient_apparition.vmdl"		// Model.
+	"BaseClass"					"npc_dota_creature"
+	"SoundSet"					"Hero_ancient_apparition"													// Name of sound set.
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
+	"IdleSoundLoop"				"Hero_Ancient_Apparition.IdleLoop"
+
+	"ModelScale" 				"1.2"
+	"CanBeDominated"			"0"
+
+	// Abilities
+	//-------------------------------------------------------------------------------------------------------------
+	"Ability1"					"creature_ancient_apparition_ice_blast"
+	"Ability2"					"creature_ancient_apparition_invulnerable"
+
+	// Armor
+	//-------------------------------------------------------------------------------------------------------------
+	"ArmorPhysical"				"-1"								// Physical protection.
+
+	// Attack
+	//-------------------------------------------------------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageMin"			"19"									// Damage range min.
+	"AttackDamageMax"			"29"									// Damage range max.
+	"AttackRate"				"1.7"									// Speed of attack.
+	"AttackAnimationPoint"		"0.45"									// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
+	"AttackRange"				"600"									// Range within a target can be attacked.
+	"ProjectileModel"			"particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf"		// Particle system model for projectile.
+	"ProjectileSpeed"			"1250"									// Speed of projectile.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"70"
+	"HealthBarOffset"			"190"
+
+
+	// Movement
+	//-------------------------------------------------------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_FLY"
+	"MovementSpeed"				"195"
+	"MovementTurnRate"			"0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"300"		// Base health.
+	"StatusHealthRegen"			"25"			// Health regeneration rate.
+	"StatusMana"				"0"		// Base mana.
+	"StatusManaRegen"			"0.0"		// Mana regeneration rate.
+
+	// Vision
+	//-------------------------------------------------------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"800"									// Range of vision at night time.
+
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
+	"VoiceFile"					"soundevents/voscripts/game_sounds_vo_ancient_apparition.vsndevts"
+
+	"Creature"
+	{
+		"HPGain"					"4000"
+		"DamageGain"				"50"
+		"ArmorGain"					"0"
+		"MagicResistGain"			"0"
+		"MoveSpeedGain"				"0"
+		"BountyGain"				"0"
+		"XPGain"					"0"
+	}
+}
+}

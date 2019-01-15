@@ -1,0 +1,22 @@
+#base items/hero_ability_recipes/_loader.txt
+
+#base items/consumables.txt
+#base items/item_bomb.txt
+#base items/item_coin.txt
+#base items/item_key.txt
+#base items/item_hero_abilities.txt
+
+#base items/memes/item_rotk.txt
+#base items/memes/item_rtz.txt
+#base items/memes/item_em.txt
+#base items/memes/item_gtmdace.txt
+#base items/memes/item_water.txt
+#base items/memes/item_family_issue.txt
+#base items/memes/item_tatical_pause.txt
+
+
+#base items/dota/item_ed_flask.txt
+#base items/dota/item_ed_heart.txt
+#base items/dota/item_ed_faerie_fire.txt
+#base items/dota/item_ed_bottle.txt
+#base items/dota/item_ed_aegis.txt

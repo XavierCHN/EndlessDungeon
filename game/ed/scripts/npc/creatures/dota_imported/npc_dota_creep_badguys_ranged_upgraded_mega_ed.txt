@@ -1,0 +1,76 @@
+"DOTAUnits"
+{
+	"npc_dota_creep_badguys_ranged_upgraded_mega_ed"
+	{
+		//"ProjectileModel"		"particles/base_attacks/ranged_badguy_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged_mega.vmdl"
+		"SoundSet"		"Creep_Bad_Range"
+		"ModelScale"		"1.1200000047684"
+		"Level"		"1"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+		"MagicalResistance"		"0"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"41"
+		"AttackDamageMax"		"46"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"1"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"500"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"25"
+		"BountyGoldMin"		"18"
+		"BountyGoldMax"		"26"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
+		"HealthBarOffset"		"150"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"325"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"475"
+		"StatusHealthRegen"		"2"
+		"StatusMana"		"500"
+		"StatusManaRegen"		"0.75"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"850"
+		"VisionNighttimeRange"		"800"
+	}
+}

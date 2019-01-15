@@ -1,0 +1,63 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.bin
+*.cfg
+~$*
+.idea/workspace.xml
+EndlessDungeon.iml
+*test*.lua
+out/
+prop_editor/.idea/
+content/ed/panorama/.idea/
+game/ed/cache_86815341.soc
+game/ed/demoheader.tmp
+game/ed/resource/flash3/images/spellicons/dota/
+game/ed/server_log.txt
+content/ed/_gsdata_/
+game/ed/_gsdata_/
+server/_gsdata_/
+*.pyc
+game/ed/screenshots/
+*.ffs_db
+*.tmp

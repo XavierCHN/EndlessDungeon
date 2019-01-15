@@ -1,0 +1,8 @@
+1_solo
+{
+	material materials/overviews/1_solo.vmat
+	pos_x -1024
+	pos_y 1024
+	scale 2.000
+}
+

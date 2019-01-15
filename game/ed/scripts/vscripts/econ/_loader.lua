@@ -1,0 +1,3 @@
+Econ = {}
+
+require 'econ.particles'

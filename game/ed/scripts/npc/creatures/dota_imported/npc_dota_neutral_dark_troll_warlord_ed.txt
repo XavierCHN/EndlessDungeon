@@ -1,0 +1,68 @@
+"DOTAUnits"
+{
+	"npc_dota_neutral_dark_troll_warlord_ed"
+	{
+		//"ProjectileModel"		"particles/base_attacks/ranged_badguy_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/neutral_creeps/n_creep_troll_dark_b/n_creep_troll_dark_b.vmdl"
+		"SoundSet"		"n_creep_Ranged"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"6"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"dark_troll_warlord_ensnare"
+		"Ability2"		"dark_troll_warlord_raise_dead"
+		"Ability3"		""
+		"Ability4"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"1"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"40"
+		"AttackDamageMax"		"45"
+		"AttackRate"		"1.3500000238419"
+		"AttackAnimationPoint"		"0.30000001192093"
+		"AttackAcquisitionRange"		"300"
+		"AttackRange"		"350"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"119"
+		"BountyGoldMin"		"54"
+		"BountyGoldMax"		"62"
+
+		// BoundsHullName
+		//========================================================================
+
+		"HealthBarOffset"		"190"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"320"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"1100"
+		"StatusHealthRegen"		"0.5"
+		"StatusMana"		"550"
+		"StatusManaRegen"		"1"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"800"
+		"VisionNighttimeRange"		"800"
+	}
+}

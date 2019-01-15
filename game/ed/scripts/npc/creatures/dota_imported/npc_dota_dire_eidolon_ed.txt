@@ -1,0 +1,76 @@
+"DOTAUnits"
+{
+	"npc_dota_dire_eidolon_ed"
+	{
+		//"ProjectileModel"		"particles/units/heroes/hero_enigma/enigma_base_attack_eidolon_ed.vpcf"
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/heroes/enigma/eidelon.vmdl"
+		"SoundSet"		"Creep_Good_Range"
+		"ModelScale"		"0.89999997615814"
+		"Level"		"1"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		""
+		"Ability2"		""
+		"Ability3"		""
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"5"
+		"MagicalResistance"		"50"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"43"
+		"AttackDamageMax"		"51"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"1.5"
+		"AttackAnimationPoint"		"0.40000000596046"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"450"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"12"
+		"BountyGoldMin"		"22"
+		"BountyGoldMax"		"36"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
+		"HealthBarOffset"		"145"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"340"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"240"
+		"StatusHealthRegen"		"0.25"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1200"
+		"VisionNighttimeRange"		"800"
+	}
+}

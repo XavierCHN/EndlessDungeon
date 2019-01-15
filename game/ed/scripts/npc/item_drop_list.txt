@@ -1,0 +1,57 @@
+// 物品的掉落列表
+// 分类和测试
+
+"DropItems"
+{
+	"core_consumables" // 核心的掉落资源，所有的东西都要使用严格控制的script来掉落
+	{
+		"item_coin" "1"
+		"item_bomb" "1"
+		"item_key" "1"
+	}
+
+	"health_regen"
+	{
+		"item_flask"		"10"
+		"item_flask_half"	"20"
+		"item_heart"		"3"
+		"item_bottle"		"1"
+	}
+
+	// 修改过的和自定义的物品
+	"custom"
+	{
+		"item_faerie_fire" "1"
+	}
+
+	// 所有的dota默认基础物品
+	"dota_items"
+	{
+		"item_branches"
+		"item_gauntlets"
+		"item_slippers"
+		"item_mantle"	
+		"item_circlet"
+		"item_belt_of_strength"
+		"item_boots_of_elves"
+		"item_robe"
+		"item_ogre_axe"
+		"item_blade_of_alacrity"
+		"item_staff_of_wizardry"
+		"item_ring_of_protection"
+		"item_blades_of_attack"
+		"item_chainmail"
+		"item_quarterstaff"
+		"item_helm_of_iron_will"
+		"item_broadsword"
+		"item_claymore"				
+		"item_javelin"
+		"item_mithril_hammer"	
+		"item_wind_lace"
+		"item_boots"
+		"item_gloves"
+		"item_cloak"
+	}
+}
+
+

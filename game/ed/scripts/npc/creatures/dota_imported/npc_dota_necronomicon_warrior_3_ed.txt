@@ -1,0 +1,76 @@
+"DOTAUnits"
+{
+	"npc_dota_necronomicon_warrior_3_ed"
+	{
+		//"ProjectileModel"		""
+		"BaseClass"		"npc_dota_creature"
+		"Model"		"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
+		"SoundSet"		"Creep_Good_Melee"
+		"ModelScale"		"0.60000002384186"
+		"Level"		"5"
+
+		// Ability1
+		//========================================================================
+
+		"Ability1"		"necronomicon_warrior_mana_burn"
+		"Ability2"		"necronomicon_warrior_last_will"
+		"Ability3"		"necronomicon_warrior_sight"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability7"		""
+		"Ability8"		""
+
+		// ArmorPhysical
+		//========================================================================
+
+		"ArmorPhysical"		"4"
+		"MagicalResistance"		"40"
+
+		// AttackCapabilities
+		//========================================================================
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"115"
+		"AttackDamageMax"		"135"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"0.75"
+		"AttackAnimationPoint"		"0.56000000238419"
+		"AttackAcquisitionRange"		"500"
+		"AttackRange"		"100"
+
+		// BountyXP
+		//========================================================================
+
+		"BountyXP"		"200"
+		"BountyGoldMin"		"200"
+		"BountyGoldMax"		"200"
+
+		// BoundsHullName
+		//========================================================================
+
+		"BoundsHullName"		"DOTA_HULL_SIZE_REGULAR"
+		"HealthBarOffset"		"165"
+
+		// MovementCapabilities
+		//========================================================================
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"350"
+		"MovementTurnRate"		"0.5"
+
+		// StatusHealth
+		//========================================================================
+
+		"StatusHealth"		"900"
+		"StatusHealthRegen"		"5"
+		"StatusMana"		"0"
+		"StatusManaRegen"		"0"
+
+		// VisionDaytimeRange
+		//========================================================================
+
+		"VisionDaytimeRange"		"1500"
+		"VisionNighttimeRange"		"800"
+	}
+}

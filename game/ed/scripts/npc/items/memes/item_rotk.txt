@@ -1,0 +1,82 @@
+"DOTAAbilities"
+{
+	"item_rotk"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"memes/item_rotk"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemKillable"					"0"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"                        "1"
+        "ItemPurchasable"               "0"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemStackable"                 "0"
+        "ItemShareability"              "ITEM_FULLY_SHAREABLE"
+        "ItemPermanent"                 "0"
+        "ItemKillable"                  "0"
+        "ItemCastOnPickup"              "0"
+        "ItemInitialCharges"            "3"
+
+		"p"			"soundevents/custom_item_sounds.vsndevts"
+		"p1"		"particles/items/rotk_roar.vpcf"
+
+        "OnSpellStart"
+        {
+            "SpendCharge" {}
+            "ActOnTargets"
+            {
+            	"Target"
+            	{
+            		"Center"  	"CASTER"
+            		"Radius" 	"%radius"
+            		"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+            		"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            	}
+            
+            	"Action"    
+            	{
+            		"ApplyModifier"
+            		{
+            			"ModifierName"	"modifier_stunned"
+            			"Target" 		"TARGET"
+            			"Duration"		"%duration"
+            		}
+            	}
+            }
+
+            "FireSound"
+            {
+            	"EffectName"	"Rotk.Roar"
+            	"Target" 		"CASTER"
+            }
+
+            "RunScript"
+            {
+            	"ScriptFile"	"items/memes/item_rotk.lua"
+            	"Function"		"PlayRotkEffect"
+            	"Target"		"CASTER"
+            }
+        }
+
+        "AbilitySpecial"
+        {
+        	"01"
+        	{
+        		"var_type"			"FIELD_INTEGER"
+        		"radius"			"900"
+        	}
+        	"02"
+        	{
+        		"var_type"			"FIELD_FLOAT"
+        		"duration"			"2.7"
+        	}
+        }
+	}
+}

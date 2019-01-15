@@ -1,0 +1,24 @@
+"DOTAAbilities"
+{
+    "creature_huskar_invulnerable"
+    {
+        "BaseClass"         "ability_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "Modifiers"
+        {
+            "modifier_creature_huskar_invulnerable"
+            {
+                "Passive"       "1"
+
+                "EffectName"    "particles/creatures/boss_huskar/huskar_invulnerable.vpcf"
+                "EffectAttachType"  "follow_origin"
+
+                "States"
+                {
+                    "MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+                }
+            }
+        }
+    }
+}

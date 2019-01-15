@@ -1,0 +1,60 @@
+"DOTAAbilities"
+{
+	"creature_satyr_hellcaster"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			""
+		"MaxLevel" 						"4"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"precache"					"soundevents/game_sounds_creeps.vsndevts"
+
+		"AbilityCooldown"				"7"
+		"AbilityCastPoint"				"0.3"
+		
+		"OnSpellStart"
+		{
+			"LinearProjectile"
+			{
+			    "Target"      	 "POINT"
+				"EffectName"	 "particles/neutral_fx/satyr_hellcaller.vpcf"
+				"MoveSpeed"		 "900"
+				"StartRadius"	 "64"
+				"StartPosition"  "attach_attack1"
+				"EndRadius"      "120"
+				"HasFrontalCone" "0"
+				"FixedDistance"  "1200"
+				"TargetTeams"	 "DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"TargetTypes"	 "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+				"TargetFlags"	 "DOTA_UNIT_TARGET_FLAG_NONE"						
+			    "ProvidesVision" "0"
+			    "VisionRadius" 	 "0"
+			}
+			"FireSound"
+			{
+				"EffectName"	"n_creep_SatyrHellcaller.Shockwave"
+				"Target" 		"CASTER"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_PURE"
+				"Damage"		"5"
+			}
+			"FireSound"
+			{
+				"EffectName"	"n_creep_SatyrHellcaller.Shockwave.Damage"
+				"Target" 		"TARGET"
+			}
+		}
+	}
+}

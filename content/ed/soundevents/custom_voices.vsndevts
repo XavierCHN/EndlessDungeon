@@ -1,0 +1,43 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Huskar.PoisonMilk1 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = [
+			"sounds/memes/huskar_milk_1.vsnd"
+		]
+		volume = "0.70000000"
+	}
+	Huskar.PoisonMilk2 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = [
+			"sounds/memes/huskar_milk_2.vsnd"
+		]
+		volume = "0.70000000"
+	}
+	Huskar.PoisonMilk3 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = [
+			"sounds/memes/huskar_milk_3.vsnd"
+		]
+		volume = "0.70000000"
+	}
+	Huskar.PoisonMilk4 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = [
+			"sounds/memes/huskar_milk_4.vsnd"
+		]
+		volume = "0.70000000"
+	}
+	Huskar.PoisonMilk5 = 
+	{
+		type = "dota_src1_2d"
+		vsnd_files = [
+			"sounds/memes/huskar_milk_5.vsnd"
+		]
+		volume = "0.70000000"
+	}
+}

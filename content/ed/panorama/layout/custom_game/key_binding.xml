@@ -1,0 +1,7 @@
+<root>
+	<scripts>
+        <include src="file://{resources}/scripts/custom_game/key_binding.js" />
+	</scripts>
+	<Panel hittest="false" class="HudKeyBinding_Root">
+	</Panel>
+</root>
